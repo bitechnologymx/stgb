@@ -1,0 +1,8 @@
+{
+  "name": "appStGeorgesBank",
+  "app_id": "2b8eddb8",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
