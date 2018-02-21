@@ -1,0 +1,2317 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:Calibri, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+body{
+	background-color: rgba(255,255,255,0.03);
+}
+
+.headerView{
+    margin-top:20px;
+    /*border-bottom:1px solid #b1b1b1;*/
+    padding-bottom:10px;
+}
+
+#menuGrid{
+    background-color: rgba(255,255,255,0);
+    margin-top: -20px;
+    padding-top: 20px;
+}
+
+.iconsMenu{
+    background-color: white;
+}
+
+#cuentaGrid{
+    background-color: rgba(255,255,255,0.1);
+    margin-top: -20px;
+    padding-top: 20px;
+}
+
+.logoStGeorge{
+	width:70%;
+	height: auto;
+	margin-top: 10%;
+}
+
+.menuHamburgesa:hover{
+    -webkit-filter: brightness(120%); /* Safari */
+    filter: brightness(120%);
+}
+
+.km-button{
+    border:none !important;
+}
+
+#usuario{
+	background-color:transparent;
+	border-bottom: solid #fff 3px;
+	width: 75%;
+	color: white;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	margin-top: 60%;
+    margin-left: 10px;
+    -webkit-animation-duration: 7s;
+    -moz-animation-duration: 7s;
+    -ms-input--animation-duration: 7s;
+    font-size: 1.5em;
+}
+
+
+ #usuario::placeholder{
+	color:rgba(84,90,83,0.82);
+}
+
+.user{
+	width: 10%;
+	height: auto;
+}
+
+#botonIngresar{
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-input--animation-duration: 3s;
+}
+
+.botonIngresar{
+	width: 100%;
+	height: 250px;
+	/**background-color: #00693E;*/
+	position: absolute;
+	bottom:30px;
+    padding-top:20px;
+    font-display: center;
+}
+
+.botonIngresar2{
+	width: 100%;
+	height: 80px;
+	background-color:rgba(0, 105, 62, 0.95);
+	position: absolute;
+	bottom:-0px;
+    font-display: center;
+    z-index: 500;
+}
+
+.botonIngresar h1{
+	text-align: center;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+	color: whitesmoke;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 1.8em;
+    font-weight:bold;
+}
+
+.botonIngresar2 h1{
+	text-align: center;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+	color: whitesmoke;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 1.8em;
+    font-weight:bold;
+}
+
+
+/*PERFIL AUTENTICAR*/
+
+.panama{
+	background-color:rgba(0, 105, 62, 0.95);
+	width: 100%;
+	height: 50%;
+    /**background-image: url(../images/bgOscuro.jpg);*/
+    background-size: cover;
+}
+
+.panama .back{
+	height: auto;
+    width: 10%;
+    float: right;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+.back2{
+	height: auto;
+    width: 100%;
+    margin-top:10px;
+}
+
+.bienvenida{
+    margin-bottom:20px;
+}
+
+.bienvenida h1{
+	font-size: 2em;
+	text-align: center;
+	color: whitesmoke;
+	z-index: 100;
+	margin: 0 !important;
+	padding-top: 3%;
+}
+
+
+.profile{
+	border-radius: 50%;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.nombre_usuario {
+	font-size: 1.2em !important;
+	color: whitesmoke !important;
+	text-align: center !important;
+
+}
+
+.password{
+	display: block;
+
+}
+
+
+.botonPerfil{
+	width: 50%;
+	height: 3%;
+	border: #272323 solid;
+	border-radius: 25px;
+    padding: 1px 15px;
+    color: #333;
+}
+
+.botonPerfil:hover{
+	color: #888;
+}
+
+div{
+	display: block;
+}
+
+
+#password{
+	background-color:transparent;
+	border-bottom: solid #00693E 3px;
+	width: 75%;
+	color: darkslategray;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+
+/*MENU PRINCIPAL*/
+
+.logoStGeorgeMenu{
+	width: 95%;
+	height: auto;
+	margin-top: -13px;
+}
+
+.nombreCliente{
+	font-size: 1.5em !important;
+    font-weight:bold !important;
+	color: #006838 !important;
+	text-align: center !important;
+}
+
+.imageMenu1{
+    background-color: #fff;
+    border-radius: 10%;
+    padding: 10px;
+    width: 75%;
+    cursor: pointer;
+}
+
+.imageMenu1:hover{
+    -webkit-filter: brightness(105%); /* Safari */
+    filter: brightness(105%);
+}
+
+.imageMenu2{
+    background-color: #fff;
+    border-radius: 10%;
+    padding: 10px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.imageMenu2:hover{
+    -webkit-filter: brightness(105%); /* Safari */
+    filter: brightness(105%);
+}
+
+.textMenu{
+
+}
+
+#balance img{
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+.menuPrincipal{
+	padding: 0 !important;
+}
+
+.menuPrincipal li{
+	list-style: none;
+	width: 80%;
+	height: 80%;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px 4px lightgray;
+	color: #006338;
+	margin: auto;
+	margin-bottom: 15%;
+	margin-top: 15%;
+	padding-bottom: 5%;
+}
+
+.menuPrincipal img{
+	width: 80%;
+	height: auto;
+}
+
+#menuPrincipal{
+	width: 100%;
+	height: auto;
+	margin: auto;
+    margin-top:0px;
+    background-color: rgba(0, 0, 0, 0.01);
+    padding: 20px 0px;
+}
+
+/*MENU TARJETAS*/
+
+
+.menuTarjetas{
+	padding: 0 !important;
+}
+
+.menuTarjetas li{
+	list-style: none;
+	width: 80%;
+	height: 50px;
+	background-color: rgba(97,191,26,0.70);
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px 4px lightgray;
+	color: white;
+	margin: auto;
+	margin-bottom: 10%;
+	margin-top: 15%;
+}
+
+.menuTarjetas li p{
+	padding-top:5%;
+	font-size: 1.2em;
+}
+
+.menuTarjetas img{
+	float: left;
+    border-radius: 20px;
+    height: auto;
+}
+
+#menuTarjetas{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.flecha{
+    width: 12%;
+    height: auto;
+}
+
+.pleca {
+    width:90%;
+    margin-left: 5%;
+    height: auto;
+    border-top: solid 2px #ddd5d5;
+    margin-top: 20px;
+}
+
+
+/*DETALLES*/
+
+.detalles{
+	width: 100%;
+	height: auto;
+}
+
+.detalles img{
+	width: 100%;
+	height: auto;
+	padding-bottom: 5%;
+}
+
+.movimientosBancarios{
+	width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0px;
+    padding-top:10px;
+    background-color: #383737;
+    color: whitesmoke;
+    text-align: center;
+    align-content: center;
+	display: block;
+	position: relative;
+	box-shadow: 0px 4px 10px 4px lightgray;
+	z-index: 2;
+    margin-top:20px;
+}
+
+#movimientos{
+	font-size: 1.4em;
+	font-weight: 300;
+    color:white;
+}
+
+.movimientosBancarios2{
+	height: auto;
+    padding-top: 2%;
+    background-color: white;
+    color: #006838;
+    text-align: center;
+    align-content: center;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+#movimientos2{
+	font-size: 1.4em;
+	margin-top: 15%;
+	font-weight: 300;
+    color:#006838;
+}
+
+.movimientosBancarios3{
+	width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0px;
+    padding-top:10px;
+    background-color: #eaeaea;
+    color: #006838;
+    text-align: center;
+    align-content: center;
+	display: block;
+	position: relative;
+	box-shadow: 0px 4px 10px 4px lightgray;
+	z-index: 2;
+    margin-top:20px;
+}
+
+#movimientos3{
+	font-size: 1.4em;
+    font-weight: bold;
+    color: #2f2f2f;
+}
+
+.tiempos{
+	margin-top: 5%;
+	font-weight: 300;
+	display: inline-block;
+    cursor:pointer;
+    padding: 2px 15px;
+}
+
+.tiempos.active{
+	border: solid 1.5px rgba(97,191,26,1);
+    border-radius: 20px;
+}
+
+.tiempos:hover{
+    border: solid 1.5px rgba(97,191,26,1);
+    border-radius: 20px;
+}
+
+.tiempos2{
+	margin-top: 5%;
+	font-weight: 300;
+	display: inline-block;
+    cursor:pointer;
+    padding: 2px 15px;
+    background-color:#cecece;
+    color:#333;
+    border-radius: 20px;
+}
+
+.tiempos2.active{
+	border: solid 1.5px rgba(97,191,26,1);
+    background-color:rgba(97,191,26,1);
+    border-radius: 20px;
+    color:white !important;
+}
+
+.tiempos2:hover{
+    border: solid 1.5px rgba(97,191,26,1);
+    border-radius: 20px;
+}
+
+.cuentaRow{
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 10px;
+}
+
+.detalleTarjetas{
+	padding: 0 !important;
+}
+
+.detalleTarjetas li{
+	list-style: none;
+	width: 90%;
+	height: 50px;
+	background-color: rgba(0,0,0,0.07);
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 2px lightgrey;
+	margin: auto;
+	margin-top:5%;
+    cursor:pointer;
+}
+
+.detalleTarjetas li:hover{
+    background-color: rgba(97,191,26,0.70);
+    color: white;
+}
+
+.detalleTarjetas li span{
+	line-height: 50px;
+	font-size: 1.2em;
+    font-weight:bold;
+}
+
+.detalleTarjetas img{
+	float: left;
+    border-radius:5px;
+    height: auto;
+}
+
+#detalleTarjetas{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.compras{
+	width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+    padding: 20px 0px;
+    background-color: white;
+    color: rgba(47,47,47,1.00);
+    text-align: center;
+    align-content: center;
+	display: block;
+	font-size: .9em;
+	box-shadow: 0px 2px 10px 2px lightgrey;
+	z-index:2;
+}
+
+.compras p{
+    font-size:1.2em;
+}
+
+.tiempos p{
+	margin: 8% 0%;
+}
+
+.selector{
+	width: 70%;
+    height: 100%;
+    position: absolute;
+    border: solid 1.5px rgba(97,191,26,1);
+    border-radius: 20px;
+    margin: auto;
+}
+
+#rectanguloUno{
+	margin: 0% 10%;
+	margin-top: -3%;
+	width: 80%;
+	height: 200px;
+	background-color: rgba(116,187,32,0.36);
+}
+
+#rectanguloDos{
+	margin: 0% 15%;
+    margin-top: -52%;
+    z-index: 1;
+    width: 70%;
+    height: 200px;
+    background-color: rgba(116,187,32,0.18);
+    position: absolute;
+}
+
+#boton_ampliar{
+	width: 20%;
+    height: 40%;
+    background-color: #006338;
+    position: absolute;
+    z-index: 5;
+    border-radius: 50%;
+    margin-top: 40%;
+    margin-left: 36%;
+	color:whitesmoke;
+	font-size: 3.5em;
+	text-align: center;
+	box-shadow: 3px 3px 10px 4px lightgray;
+    cursor:pointer;
+}
+
+#boton_ampliar:hover{
+    background-color: #74bb20;
+}
+
+/*FORMULARIO TRANSFERENCIA*/
+
+.formulario{
+	padding-bottom: 3%;
+    border-bottom: thin solid lightgray;
+    color: #006338;
+    margin-top: 3%;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding-top: 3%;
+}
+
+.formulario:last-child{
+	padding-bottom: 3%;
+    border-bottom: thin solid transparent;
+    color: #006338;
+    margin-top: 3%;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding-top: 3%;
+}
+
+.nombreSeleccion{
+	/*background-color: #006838;*/
+    padding: 0px 15px;
+    width: fit-content;
+    border-radius: 5px;
+    color: #61bf1a !important;
+    font-size: 1.6em !important;
+    font-weight: bold !important;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+.nombreSeleccionDiv{
+	background-color:white !important;
+    text-transform: uppercase;
+    border-bottom: 1px solid #505050;
+    padding: 0px 0px;
+    /* background-color: #61bf1a; */
+    text-shadow: 1px 1px 1px #b0b0b0;
+}
+
+.principal img{
+	width: 25%;
+	height: auto;
+	margin: 0% 37.5%;
+}
+
+.seleccionCuentas{
+	text-align: left;
+	font-weight: 200;
+}
+
+.alineacion{
+	text-align: right;
+}
+
+.formulario select{
+	background-color: white;
+    border-radius: 10px;
+    border: transparent 1px solid;
+}
+
+.importe{
+	text-align: center;
+	background-color: white;
+    border-radius: 10px;
+    border: transparent 1px solid;
+}
+
+.importe::placeholder{
+	color: dimgray;
+	font-style: italic;
+	font-size:.8em;
+}
+
+.fecha{
+	font-size: 1.3em;
+	margin-top:0;
+}
+
+.fechayhora{
+	text-align: center;
+	background-color: white;
+    border-radius: 10px;
+    border: transparent 1px solid;
+}
+
+.botones{
+	border-radius: 20px;
+    border: 2px solid;
+    background-color: white;
+    font-weight: 600;
+}
+
+.recibo{
+	width: 80%;
+	text-align: center;
+	background-color: white;
+    border-radius: 10px;
+    border: transparent 1px solid;
+}
+
+.recibo::placeholder{
+	color: dimgray;
+	font-style: italic;
+	font-size:.8em;
+}
+
+.link{
+	display: block;
+	font-size:.8em;
+	margin: 5% 0%;
+}
+
+/**
+#usuario::-webkit-input-placeholder {
+  color: #333;
+}
+#usuario::-moz-placeholder {
+  color: white;
+}
+#usuario:-ms-input-placeholder {
+  color: white;
+}
+#usuario:-moz-placeholder {
+  color: white;
+}*/
+
+/*menu hamburguesa*/
+.hamburguesaTop{
+
+	width: 100%;
+	height: 50%;
+}
+
+.hamburguesaTop img:nth-child(1){
+	height: auto;
+    width: 10%;
+    float: right;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+.menuH img{
+	width: 15% !important;
+	height: auto;
+	display: inline-block;
+}
+
+
+.menuH h1{
+	margin-left: 10% !important;
+    font-size: 1.15em;
+    color: #006338;
+    display: inline-block;
+}
+
+.menuH h1:hover{
+    color: #7ab63a;
+}
+
+.menuH ul{
+	list-style: none;
+	display: block;
+	padding: 0;
+}
+
+.menuH li{
+    width: 100%;
+    height: auto;
+	vertical-align: middle;
+    margin: 1% 0%;
+}
+
+.menuH{
+	width: 95%;
+	border-bottom: 2px dashed rgba(0,0,0,0.20);
+    padding: 10px 15px;
+}
+
+.menuH:last-child{
+	border-bottom: transparent solid 2px;
+}
+
+/*FORMULARIO TRANSFERENCIA*/
+
+.formulario{
+	padding-bottom: 3% !important;
+    border-bottom: thin solid lightgray !important;
+    color: #006338 !important;
+    margin-top: 3% !important;
+    font-size: 1.2em !important;
+    font-weight: 300 !important;
+    padding-top: 3% !important;
+    text-align: center;
+}
+
+.formulario p{
+    font-size: 1.2em;
+    color: #006338;
+}
+
+.formulario input{
+    vertical-align:middle;
+    font-size: 1em;
+}
+
+.formulario select{
+    font-size: 1em;
+}
+
+.formulario h1{
+    color: #006338;
+}
+
+fieldset{
+    border: none;
+    display: inherit;
+}
+
+fieldset label{
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+.formulario:last-child{
+	padding-bottom: 3% !important;
+    border-bottom: thin solid transparent !important;
+    color: #006338 !important;
+    margin-top: 3% !important;
+    font-size: 1.2em !important;
+    font-weight: 300 !important;
+    padding-top: 3% !important;
+}
+
+/**.nombreSeleccion{
+	font-size: 1.7em !important;
+    color: #61BF1A !important;
+    text-align: center !important;
+    margin-top: 8% !important;
+    font-weight: 300 !important;
+}*/
+
+.principal img{
+	width: 25% !important;
+	height: auto !important;
+	margin: 0% 37.5% !important;
+}
+
+.seleccionCuentas{
+    font-size: 1.1em;
+	    width: 50%;
+    text-align: left;
+    font-weight: 200;
+    margin-left: 25%;
+    margin-top: -15%;
+}
+
+
+.alineacion{
+	text-align: left !important;
+}
+
+.formulario select{
+	background-color: white !important;
+    border-radius: 10px !important;
+    border: transparent 1px solid !important;
+    color: rgba(0,0,0,.5);
+    height: 40px;
+}
+
+.importe{
+	text-align: center !important;
+	background-color: white !important;
+    border-radius: 10px !important;
+    border: transparent 1px solid !important;
+    height: 40px;
+}
+
+.importe::placeholder{
+	color: dimgray !important;
+	font-style: italic !important;
+	font-size:1em !important;
+}
+
+.fecha{
+	font-size: 1.3em !important;
+	margin-top:0 !important;
+}
+
+.fechayhora{
+	text-align: center !important;
+	background-color: white !important;
+    border-radius: 10px !important;
+    border: transparent 1px solid !important;
+    color: rgba(0,0,0,.5);
+}
+
+.botones{
+	border-radius: 20px ;
+    border: 2px solid #006338;
+    border-radius: 10px !important;
+    background-color: #006338;
+    font-weight: 600;
+    color: white;
+    margin: 0% 5%;
+}
+
+.recibo{
+	width: 80% !important;
+	text-align: center !important;
+	background-color: white !important;
+    border-radius: 10px !important;
+    border: transparent 1px solid !important;
+}
+
+.recibo::placeholder{
+	color: dimgray !important;
+	font-style: italic !important;
+	font-size:.8em !important;
+}
+
+.link{
+	display: block !important;
+	font-size:.8em !important;
+	margin: 5% 0% !important;
+}
+
+#tarjetaTransaccion{
+    width:100%;
+}
+
+/*CUENTAS*/
+
+.cuenta {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.cuenta h1{
+	position: absolute;
+    margin-top: 18%;
+    margin-left: 22%;
+    font-size: 1.4em;
+    text-align: center;
+    color: #006338;
+}
+
+.card{
+	width: 60%;
+	height: auto;
+}
+
+.cardSlide{
+	position: absolute;
+    width: 55%;
+    height: auto;
+    margin-left: 5%;
+}
+
+/*CUENTA DETALLES*/
+
+.detalles_cuenta{
+	border-top: rgba(0,0,0,0.1 ) solid;
+	margin-bottom: 5%;
+}
+
+.detalles_cuenta h1{
+    font-size: 1.4em;
+    text-align: center;
+    color: #006338;
+}
+
+.detalles_cuenta h3{
+	margin-top: 0;
+	color: #006338;
+}
+
+.detalles_cuenta p{
+	font-size: .9em;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.meses{
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.mes_cuenta{
+	width: 100%;
+	height: auto;
+	font-size: 1.3em;
+	border: none;
+	background: transparent;
+}
+
+.detalles_cuenta ul{
+	list-style: none;
+	padding: 0;
+}
+
+#seleccionado{
+	background-color: rgba(97,191,26,0.80);
+	padding: 0;
+	border-radius: 20px;
+}
+
+.acciones_cuenta{
+	background-color: transparent;
+	border: solid 2px rgba(0,99,56,.5);
+	border-radius: 20px;
+}
+
+.acciones_cuenta:active{
+	background-color: #61BF1A;
+	border: solid 3px rgba(0,99,56,1);
+	border-radius: 20px;
+}
+
+#boton_cuenta{
+	width: 14%;
+    height: 35%;
+    background-color: #006338;
+    position: absolute;
+    z-index: 5;
+    border-radius: 50%;
+    margin-top: 35%;
+    margin-left: 36%;
+	color:whitesmoke;
+	font-size: 2.5em;
+	text-align: center;
+	box-shadow: 3px 3px 10px 4px lightgray;
+}
+
+/*CUENTA OPCION DETALLES*/
+
+.cuenta_opcion{
+border-top: rgba(0,0,0,0.1 ) solid;
+}
+
+.cuenta_opcion h1{
+    margin: 3%;
+    font-size: 1.6em;
+    text-align: center;
+    color: #006338;
+}
+
+.cuenta_opcion h3{
+	font-size: 1.3em;
+    color: #61BF1a;
+    text-decoration: underline;
+}
+
+.cuentaDos h1{
+	position: absolute;
+    margin-top: 18%;
+    margin-left: 22%;
+    font-size: 1.4em;
+    text-align: center;
+    color: #006338;
+}
+
+.cuentaDos{
+	padding-top: 5%;
+}
+
+.detallesDos img{
+	width: 100%;
+}
+
+.ingreso h1{
+	font-size: 1em;
+	text-align: left;
+	color: gray;
+}
+
+.ingreso h2{
+	font-size: 1.5em;
+	text-align: center;
+	color: #61bf1a;
+}
+
+.gasto h1{
+	font-size: 1em;
+	text-align: left;
+	color: gray;
+}
+
+.gasto h2{
+	font-size: 1.5em;
+	text-align: center;
+	color: #FC6D00;
+}
+
+/*TRANSACCION EXITOSA*/
+
+.fondoTransaccion{
+	margin: 15% 5%;
+    width: 90%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 30px;
+	box-shadow: 3px 3px 10px 4px lightgray;
+}
+
+.fondoTransaccion h2{
+	font-size: 1.5em;
+    margin-top: 5%;
+}
+
+.fondoTransaccion h1{
+	font-size: 1.1em !important;
+	border-bottom: solid 2px rgba(77,74,74,0.20);
+    padding-bottom: 2%;
+}
+
+.transaccionDetalle{
+	margin-top: 5%;
+}
+
+.transaccionDetalle h1{
+	text-align: left;
+	margin-top:2%;
+	border: none;
+	font-size: 1.2em;
+	color: #61BF1A;
+}
+
+.transaccionDetalle h2{
+	margin-top: 2%;
+    font-size: 1em;
+    text-align: left;
+    color: rgba(00,00,00,0.8);
+}
+
+.cuadroBeneficiario{
+
+}
+
+.cuadroBeneficiario img{
+	margin: 15%;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.completo{
+	margin: auto;
+    width: 60%;
+    height: auto;
+    border: 2px solid rgba(0,0,0,0.20);
+    border-radius: 20px;
+	margin-bottom: 5%;
+}
+
+.completo h1{
+	color: rgba(00,00,00,.45);
+    font-size: 1.4em;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    border: none;
+}
+
+#boton_exito{
+	margin-top: -15%;
+    width: 30%;
+    height: auto;
+}
+
+.mastercard_transaccion{
+	float: left;
+    border-radius: 20px;
+
+}
+
+.tarjeta_transaccion{
+	border-top: solid 2px rgba(0,0,0,0.15);
+}
+
+#boton_cerrartransaccion{
+	margin-top: -15%;
+    width: 20%;
+    height: auto;
+    margin-left: 40%;
+    cursor:pointer;
+    height:-webkit-fill-available;
+    margin-bottom: 10%;
+}
+
+#boton_cerrartransaccion:hover{
+	-webkit-filter: brightness(90%); /* Safari */
+    filter: brightness(90%);
+}
+
+/*TARJETA TRANSACCION*/
+
+#tarjetaTransaccion{
+	margin-top: 5%;
+	width: 60%;
+	height: auto;
+
+}
+
+.menuBeneficiario{
+	padding-left: 0;
+}
+
+.menuBeneficiario img{
+	border-radius: 15px;
+    width: 90%;
+    height: auto;
+}
+
+#anadirBeneficiario{
+	font-size: .96em;
+    width: 90%;
+    height: auto;
+    border: dashed 2px rgba(00,00,00,.20);
+    border-radius: 15px;
+}
+
+.detallesTransaccion h1{
+	font-size: 1.2em;
+    color: #006338;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.detallesTransaccion{
+	margin-top: 5%;
+	border-top:2px solid rgba(0,0,0,0.20);
+}
+
+.formularioTransaccion{
+	margin-left: 10%;
+    text-align: left;
+    margin-top: 10%;
+    width: 80%;
+    height: auto;
+}
+
+.formt label{
+	text-align: left;
+	font-size: 1.2em;
+	color:#006338;
+}
+
+.formt input{
+	background-color: transparent;
+    /* border: none; */
+    border-top: none;
+    border-bottom: 2px solid #006338;
+    border-left: none;
+    width: 100%;
+}
+
+.formt input::placeholder{
+	color: rgba(0,0,0,0.40);
+}
+
+.formt select{
+	color: rgba(00,00,00,.40);
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 2px solid #006338;
+    border-left: none;
+    width: 100%;
+}
+
+.formt option{
+	color: rgba(0,0,0,0.70);
+}
+
+.commonBtn{
+    padding: 3px 15px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: solid 2px rgb(0,99,56);
+    border-radius: 20px;
+    margin-top: 10%;
+}
+
+/*TRANSACCION EXITOSA*/
+
+.transaccionExitosa{
+    position: absolute;
+    z-index: 100;
+    margin-top: 25%;
+    background-color: #ffffff;
+}
+
+.fondoTransaccion{
+	margin: 15% 5%;
+    width: 90%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 30px;
+	box-shadow: 3px 3px 10px 4px lightgray;
+}
+
+.fondoTransaccion h2{
+	font-size: 1.5em;
+    margin-top: 5%;
+}
+
+.fondoTransaccion h1{
+	font-size: 2em;
+	border-bottom: solid 2px rgba(77,74,74,0.20);
+}
+
+.transaccionDetalle{
+	margin-top: 5%;
+}
+
+.transaccionDetalle h1{
+	text-align: left;
+	margin-top:2%;
+	border: none;
+	font-size: 1.2em;
+	color: #61BF1A;
+}
+
+.transaccionDetalle h2{
+	margin-top: 2%;
+    font-size: 1em;
+    text-align: left;
+    color: rgba(00,00,00,0.8);
+}
+
+.cuadroBeneficiario img{
+	margin: 15%;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.completo{
+	margin: auto;
+    width: 60%;
+    height: auto;
+    border: 2px solid rgba(0,0,0,0.20);
+    border-radius: 20px;
+	margin-bottom: 5%;
+}
+
+.completo h1{
+	color: rgba(00,00,00,.45);
+    font-size: 1.4em;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    border: none;
+}
+
+#boton_exito{
+	margin-top: -15%;
+    width: 30%;
+    height: auto;
+}
+
+.mastercard_transaccion{
+	float: left;
+    border-radius: 20px;
+
+}
+
+.tarjeta_transaccion{
+	border-top: solid 2px rgba(0,0,0,0.15);
+}
+
+#boton_cerrartransaccion{
+	margin-top: -15%;
+    width: 20%;
+    height: auto;
+    margin-left: 40%;
+}
+
+.commonBtn:active{
+	background-color: #61BF1A;
+	border: solid 3px rgb(0,99,56);
+	border-radius: 20px;
+}
+
+.inputContacto{
+    width: 100% !important;
+    text-align: -webkit-left !important;
+    border:none;
+    border-bottom: 1px solid #006838 !important;
+}
+
+.inputContacto2{
+    width: 100% !important;
+    text-align: -webkit-left !important;
+    border: 1px solid #777;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #333 !important;
+    padding: 10px 15px !important;
+}
+
+.selectContacto{
+    width:100% !important;
+    margin-bottom:10px !important;
+    height:auto !important;
+    font-size:1.3em !important;
+    border: 2px solid #bfbfbf !important;
+    border-radius: 10px !important;
+    padding: 8px 15px !important;
+    color: #333 !important;
+    background-color: white !important;
+}
+
+.selectContacto option {
+    background: white;
+    color: #333;
+}
+
+.selectContacto option:not(:checked) {
+    background: white;
+    color: #333;
+}
+
+.tarjetaDiv{
+    margin-top:10px;
+}
+
+.cuentasBtns{
+    margin:0px;
+    float:left;
+    margin-top:5px;
+    margin-right:10px;
+    border-radius: 2px;
+    padding: 0px 8px;
+    width:100%;
+}
+
+.nombreSeleccionDiv{
+
+}
+
+.rotateImg{
+    transform: rotate(180deg);
+}
+
+.linesRow{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #bbb;
+}
+
+/*AQUÍ EMPIEZAN LOS ESTILOS NUEVOS DE LA SEGUNDA PRUEBA DE LA APP, VAN EN ORDEN COMO ESTÁN INDICADOS EN LA LISTA*/
+
+/*CONTACTOLVIEW*/
+
+.headerApp{
+    display: none;
+}
+
+.divHeader{
+    background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);
+}
+
+.margen10{
+    margin-top: 10px;
+}
+
+.margen20{
+    margin-top: 20px;
+}
+
+.margen25{
+    margin-top: 25px;
+}
+
+.margen30{
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+
+.contactoh1{
+	font-size: 1.3em !important;
+	margin-top:0;
+    color: #006838 !important;
+    font-weight:000 !important;
+}
+
+.contactomargen10{
+    margin-top: 10px;
+}
+
+.contactomargen20{
+    margin-top: 20px;
+}
+
+.contactomargen25{
+    margin-top: 25px;
+}
+
+.contactomargen30{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.contactospan{
+    font-weight: bold;
+    color: white;
+    font-size: medium;
+}
+
+.pbotoncontacto{
+    padding: 5px 20px;
+}
+
+.inContacto{
+    width: 100% !important;
+    text-align: -webkit-left !important;
+    border:none;
+    border-bottom: 1px solid #006838 !important;
+    color: #afafaf;
+    padding: 5px 15px;
+}
+
+/*CONTACTOVIEW*/
+
+
+.headerC{
+    display: none;
+}
+
+.divHeaderc{
+    background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);
+}
+
+.margen10c{
+    margin-top: 10px;
+}
+
+.margen20c{
+    margin-top: 20px;
+}
+
+.margen25c{
+    margin-top: 25px;
+}
+
+.margen30c{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.pbotonc{
+    padding: 5px 20px;
+}
+
+.conspan{
+    font-weight: bold;
+    color: white;
+    font-size: medium;
+}
+
+/*CUENTAS*/
+
+.headerCu{
+    display: none;
+}
+
+.divHeadercu{
+    background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);
+}
+
+.positionCu{
+    position:fixed;
+}
+
+.borderCu{
+    border-bottom:1px solid #b1b1b1;
+}
+
+.paddingCu{
+    padding:0px;
+}
+
+.detalleCu{
+	padding: 0 !important;
+    margin-top: 20px;
+}
+
+.cu1{
+    border-bottom:1px solid #afafaf;
+    padding-bottom:5px;
+    margin-bottom: 5px;
+}
+
+.cu2{
+    font-weight:bold;
+    color:#333;
+    float:left;
+}
+
+.cu3{
+    float:right;
+    font-weight:bold;
+    color:#006838;
+}
+
+.cu4{
+    border-bottom:1px solid #c1c1c1;
+    padding-bottom:5px;
+    margin-bottom: 5px;
+}
+
+.cu5{
+    padding-right:0px;
+    border-right:1px solid #adadad;
+}
+
+.cu6{
+    color:#ababab;
+}
+
+.cu7{
+    padding-left:0px;
+}
+
+.cu8{
+    margin-top:5px;
+    border-top:1px solid #adadad;
+}
+
+.cu9{
+    padding-right:0px;
+    margin-top:5px;
+}
+
+.cu10{
+    float:left;
+    cursor:pointer;
+}
+
+.cu10b{
+    float:right;
+    cursor:pointer;
+}
+
+.cu11{
+    margin-left:5px;
+    margin-top:-10px;
+}
+
+.cu12{
+    width:auto;
+    height:10px !important;
+    margin-right:15px !important;
+    margin-top:-10px;
+}
+
+.cu13{
+    display: none;
+}
+
+.cu14{
+    display: none;
+}
+
+.cu15{
+    color:#8e8e8e;
+}
+
+.cu16{
+    padding-left:0px;
+}
+
+.cu17{
+    font-weight:600;
+}
+
+.widthCu{
+    width:21px;
+}
+
+.listaUno span{
+    margin:0px;
+    font-size:13px;
+}
+
+.listaUno span:first-child{
+    margin:0px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.listaDos span{
+    margin:0px;
+    font-size:14px;
+}
+
+.listaDos{
+    padding:0px;
+}
+
+.listaDos span:first-child{
+    margin:0px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.listaTres span:first-child{
+    font-weight:bold;
+}
+
+.listaUnob span{
+    margin:0px;
+    font-size:13px;
+    color:#ababab;
+}
+
+.listaDosb span{
+    font-weight: bold;
+    font-size:14px;
+}
+
+.listaDosb{
+    padding:0px;
+}
+
+/*HOME*/
+
+.posicionHome{
+    position:fixed;
+}
+
+.headerHome{
+    display:none;
+}
+
+.divHome{
+    background-image:linear-gradient(to right, #f6a426 0%, #ff8a00 100%);
+}
+
+.home1{
+    display:none;
+}
+
+.home2{
+    cursor:pointer;
+}
+
+.home3{
+    background-color:rgba(0, 0, 0, 0.5);
+    padding:15px;
+    padding-bottom:20px;
+}
+
+.home4{
+    width:40%;
+}
+
+.home5{
+    background-color:rgba(0, 105, 62, 0.95);
+}
+
+.home6{
+    background-color:rgba(0, 0, 0, 0.8);
+    padding:20px;
+    color:white;
+    padding-bottom:25px;
+}
+
+/*LOGIN*/
+
+.loginPosition{
+    position:fixed;
+}
+
+.loginHeader{
+    display:none;
+}
+
+.divLogin{
+    background-image:linear-gradient(to right, #f6a426 0%, #ff8a00 100%);
+}
+
+.login1{
+    display:none;
+    overflow-x:hidden;
+}
+
+.login2{
+    margin-top:20px;
+}
+
+.login3{
+    color:#006838;
+}
+
+.login4{
+    color: #afafaf;
+    padding:5px 15px;
+}
+
+.login5{
+    padding-bottom:40px;
+}
+
+.login6{
+    margin-top:0px;
+    padding:0px 25px;
+    margin-bottom:20px;
+}
+
+.login7{
+    color:white !important;
+}
+
+.login8{
+    margin-top:60px;
+}
+
+.login9{
+    margin-top:10px;
+    padding-right:40px;
+}
+
+.login10{
+    color:#6b6b6b;
+    font-weight: bold;
+}
+
+.login11{
+
+    z-index: 100;
+}
+
+/*MENU*/
+
+.positionMenu{
+    position:fixed;
+    overflow-x:hidden;
+}
+
+.headerMenu{
+    display:none;
+}
+
+.divMenu{
+    background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);
+}
+
+.menu1{
+    border-bottom:1px solid #b1b1b1;
+}
+
+.menu2{
+    margin-top:20px;
+}
+
+.menu3{
+    color:#4e4e4e;
+    font-weight:bold;
+}
+
+.menu4{
+    color:#006838;
+}
+
+.menu5{
+    display:none;
+    margin-top:80px;
+}
+
+.menu6{
+    margin-top:10px;
+}
+
+.menu7{
+    display:none;
+    height:30px;
+    bottom:20px;
+}
+
+.menu8{
+    font-weight:bold;
+}
+
+/*OLVIDASTE*/
+
+.olPosicion{
+    position:fixed;
+}
+
+.olHeader{
+    display:none;
+}
+
+.olDiv{
+    background-image:linear-gradient(to right, #f6a426 0%, #ff8a00 100%);
+}
+
+.ol1{
+    margin-top:0px;
+}
+
+.ol2{
+    margin-top:20px;
+}
+
+.ol3{
+    color:#484848;
+}
+
+.ol4{
+    margin-top:25px;
+}
+
+.ol5{
+    padding:5px 10px;
+}
+
+.ol6{
+    padding:5px 10px;
+    min-width:113px;
+}
+
+/*PAGOS*/
+
+.pagosPosicion{
+    position:fixed;
+    overflow-x:hidden;
+}
+
+.headerPagos{
+    display:none;
+}
+
+.divHeader{
+    background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);
+}
+
+.pagos1{
+    border-bottom:1px solid #b1b1b1;
+}
+
+.pagos2{
+    font-size:17px;
+    font-weight:bold;
+}
+
+.pagos3{
+    margin-top:20px;
+}
+
+.pagos4{
+    width:100%;
+}
+
+.pagos5{
+    margin-top:10px;
+}
+
+.pagos6{
+    display:none;
+    margin-top:20px;
+}
+
+/*PRESTAMO*/
+
+.prestamoHeader{
+    display:none;
+}
+
+.divPrestamo{
+    background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);
+}
+
+.pre1{
+    border-bottom:1px solid #b1b1b1;
+}
+
+.pre2{
+    margin-top:20px;
+}
+
+.pre3{
+    padding:0px;
+}
+
+.pre4{
+    border-bottom:1px solid #c1c1c1;
+    padding-bottom:5px;
+    margin-bottom:5px;
+    padding-top:5px;
+    background-color:#efefef;
+}
+
+.pre5{
+    font-weight:bold;
+    color:#333;
+    float:left;
+}
+
+.pre6{
+    float:right;
+    font-weight:bold;
+    color:#006838;
+}
+
+.pre7{
+    padding-right:0px;
+    border-right:1px solid #adadad;
+}
+
+.pre8{
+    color:#ababab;
+}
+
+.pre9{
+    padding-left:0px;
+}
+
+.pre10{
+    border-top:1px solid #cecece;
+    margin-top:5px;
+    padding-top:5px;
+}
+
+.pre11{
+    cursor:pointer;
+}
+
+.pre12{
+    cursor:pointer;
+    width:21px;
+    margin-top:-10px;
+}
+
+.pre13{
+    display:none;
+}
+
+.pre14{
+    margin-top:5px;
+    padding:15px 0px;
+}
+
+.pre15{
+    font-weight:bold;
+    font-size:15px;
+    color:#868686;
+}
+
+.pre16{
+    float:none;
+    margin-right:0px;
+}
+
+
+/*SUCURSALESLVIEW*/
+
+.sucHeader{
+    display:none;
+}
+
+.divSuc{
+    background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);
+}
+
+.suc1{
+    width:85%;
+}
+
+.suc2{
+    float:left;
+}
+
+.suc3{
+    width:25px;
+    margin-left: 30px;
+}
+
+.suc4{
+    margin-top:20px;
+}
+
+.suc5{
+    margin:20px 0px;
+    padding:10px 30px;
+    background-color:#f1f1f1;
+}
+
+.suc6 h2{
+    color:#006838;
+    font-weight:bold;}
+
+.suc7{
+    border:0;
+}
+
+.suc8 h2{
+    margin-top:10px;
+}
+
+/* TARJETAS*/
+
+.tarHeader{
+    display:none;
+}
+
+.tarDiv{
+    background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);
+}
+
+.tar1{
+    border-bottom:1px solid #b1b1b1;
+}
+
+.tar2{
+    margin-top:20px;
+}
+
+.tar3{
+    border-bottom:1px solid #c1c1c1;
+    padding-bottom:5px;
+    margin-bottom: 5px;
+}
+
+.tar4{
+    font-weight:bold;
+    color:#333;
+    float:left;
+}
+
+.tar5{
+    float:right;
+    font-weight:bold;
+    color:#006838;
+}
+
+.tar6{
+    padding:0px;
+}
+
+.tar7{
+    width:100%;
+    height:auto;
+}
+
+.tar8{
+    padding-right:0px;
+    border-right:1px solid #adadad;
+}
+
+.tar9{
+    color:#ababab;
+}
+
+.tar10{
+    padding-left:0px;
+}
+
+.tar11{
+    margin-top:5px;
+    border-top:1px solid #adadad;
+}
+
+.tar12{
+    padding-right:0px;
+    margin-top:5px;
+}
+
+.tar13{
+    float:left;
+    cursor:pointer;
+}
+
+.tar13b{
+    float:right;
+    cursor:pointer;
+}
+
+.tar14{
+    margin-left:20px;
+    margin-top:-10px;
+}
+
+.tar15{
+    width:auto;
+    height:10px;
+    margin-right:15px;
+}
+
+.tar16{
+    display:none;
+}
+
+.tar17{
+    display:none;
+}
+
+.tar18 span{
+    margin:0px;
+    font-size:13px;}
+
+.tar18 span:first-child{
+    margin:0px;
+    font-size:13px;
+    font-weight: bold;
+    }
+
+.tar18b span{
+    display:none;
+    margin:0px !important;
+    font-size:13px !important;
+}
+
+.tar18b span:first-child{
+    font-weight: normal;
+}
+
+.tar19{
+    padding:0px;
+}
+
+.tar19 span{
+    font-size:14px;
+}
+
+.tar19 span:first-child{
+    font-weight:bold;
+}
+
+.tar19b span{
+    display:none;
+    font-size:14px !important;
+}
+
+.tar19b span:first-child{
+    font-weight: normal;
+}
+
+.tar20{
+    width:21px;
+}
+
+.tar21 span{
+    font-weight:bold;
+    font-size:14px;
+    }
+
+.tar21 span:first-child{
+    font-weight:bold;
+    font-size:15px;
+    color:#545454;
+    }
+
+.tar22{
+    margin-bottom:20px;
+}
+
+.tar23{
+    margin:0px;
+    font-size:15px;
+    color:#006838;
+}
+
+.tar24{
+    padding:10px;
+}
+
+.tar25{
+    margin-bottom: 10px;
+}
+
+/*TRANSFERENCIAS*/
+
+.transPosicion{
+    position:fixed;
+}
+
+.transHeader{
+    display:none;
+}
+
+.transDiv{
+    background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);
+}
+
+.trans1{
+    display:none;
+}
+
+.trans2{
+    border-bottom:1px solid #b1b1b1;
+}
+
+.trans3{
+    font-size:17px;
+    font-weight:bold;
+}
+
+.trans4{
+    display:none;
+    margin:20px 0px;
+}
+
+.trans5{
+    width:100%;
+}
+
+.trans6{
+    margin-top:10px;
+}
+
+.trans7{
+    margin-top:20px;
+}
+
+.bordertemp{
+    border:1px solid #9a9a9a;
+    border-radius:10px;
+    padding:0px;
+    padding-bottom:10px;
+}
+
+.botonIngresarDos{
+  	width: 100%;
+	height: 250px;
+	/**background-color: #00693E;*/
+	position: absolute;
+	bottom:30px;
+    padding-top:20px;
+    font-display: center;
+}
