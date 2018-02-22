@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Nav, Platform, NavController } from 'ionic-angular';
 import { AfterContentInit } from '@angular/core';
+import { LoginPage } from '../../pages/login/login';
 import * as $ from 'jquery';
 
 @Component({
@@ -8,8 +9,9 @@ import * as $ from 'jquery';
   templateUrl: 'home.html'
 })
 export class HomePage implements AfterContentInit {
-  constructor(public navCtrl: NavController) {
 
+  constructor(public nav: NavController) {
+    this.nav = nav;
   }
   ngAfterContentInit() {
 
@@ -20,8 +22,27 @@ export class HomePage implements AfterContentInit {
     //$("#video-background").css('width', (ww+'px'));
     //$("#video-background").css('height', ((wh+45)+'px'));
     $('#video-background').attr('playsinline','');
-    //$("#video-background").css({'width':(ww+'px'),'height':((wh+45)+'px')});
-    let video = document.getElementById("video-background");
-    //video.play();
+
+    setTimeout(function(){ animateHome(); }, 2700);
   }
+  public menuBotones(){
+      if ($('#menuBotones').css("display") == "none") {
+          $('#menuBotones').show();
+          $('#menuBotones').addClass('animated zoomInDown');
+      } else {
+          $('#menuBotones').hide();
+      }
+  }
+  public goToLogin(){
+    this.nav.push(LoginPage);
+  }
+}
+function animateHome(){
+  $('#headerViewMain').show();
+  $('#headerViewMain').addClass('animated zoomInUp');
+  $('#botonIngresar').show();
+  $('#formUser').show();
+  $('#formUser').addClass('animated zoomInDown');
+  $('#btnIngresar').show();
+  $('#btnIngresar').addClass('animated zoomInDown');
 }
