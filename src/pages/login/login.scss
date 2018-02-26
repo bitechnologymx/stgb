@@ -1,3 +1,50 @@
 page-login {
 
+  .scroll-content{
+    padding: 0px !important;
+  }
+
+    .hLogin{
+      text-transform:capitalize;
+      font-size:1.5em;
+    }
+
+    .alinearLogin{
+      text-align:-webkit-center;
+    }
+
+    .botonLogin{
+      position:relative;
+      height:auto;
+      padding:0.1px;
+      margin-top:10px;
+      border-radius:10px;
+      width: 80%;
+    }
+
+    .grid{
+      padding: 0px !important;
+    }
+
+    .replyDirect{
+      cursor:pointer;
+      width:30px;
+      height: auto;
+      margin-top:15px !important;
+      margin-left:10px;
+    }
+
+    .touchId{
+      width: 80px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .marginLogin{
+      margin-bottom:10px;
+    }
+
+    .marginLogin2{
+      margin-bottom:20px;
+    }
 }

@@ -11,6 +11,7 @@ import { PrincipalPage } from '../pages/principal/principal';
 import { PagosPage } from '../pages/pagos/pagos';
 import { PrestamosPage } from '../pages/prestamos/prestamos';
 import { RecuperarContraseñaPage } from '../pages/recuperar-contraseña/recuperar-contraseña';
+import { PasswordPage } from '../pages/password/password';
 import { SucursalesPage } from '../pages/sucursales/sucursales';
 import { TarjetasPage } from '../pages/tarjetas/tarjetas';
 import { TransferenciasPage } from '../pages/transferencias/transferencias';
@@ -24,7 +25,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     LoginPage,
     ContactoPage,
-    CuentasPage
+    CuentasPage,
+    ContactoPage,
+    CuentasPage,
+    LoginPage,
+    PrincipalPage,
+    PagosPage,
+    PrestamosPage,
+    PasswordPage,
+    SucursalesPage,
+    TarjetasPage,
+    TransferenciasPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +47,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     LoginPage,
     ContactoPage,
-    CuentasPage
+    CuentasPage,
+    ContactoPage,
+    CuentasPage,
+    LoginPage,
+    PrincipalPage,
+    PagosPage,
+    PrestamosPage,
+    PasswordPage,
+    SucursalesPage,
+    TarjetasPage,
+    TransferenciasPage
   ],
   providers: [
     StatusBar,

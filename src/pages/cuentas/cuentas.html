@@ -6,13 +6,401 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+ <!--  <ion-navbar>
     <ion-title>Cuentas</ion-title>
-  </ion-navbar>
+  </ion-navbar>-->
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <div class="" id="cuentasGrid">
+
+          <div class="row headerView borderCu">
+              <div class="col-2 tal padPrincipal">
+                  <a data-role="button" href="#appDrawer" onclick="menuP();" on-tap="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                      <img class="menuHamburgesa" src="./assets/imgs/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                  </a>
+              </div>
+              <div class="col-10 tac">
+                  <img class="logoStGeorgeMenu" src="./assets/imgs/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+              </div>
+          </div>
+
+            <div class="row">
+          <div class="col-12 tawc nombreSeleccionDiv">
+              <h2 class="nombreSeleccion">Cuentas</h2>
+          </div>
+          </div>
+
+          <div id="detalleCu" style="background-color:#ececec;">
+
+              <div class="row cuentaRow contenedorCuentas">
+                  <div class="bordertemp col-12" style="">
+                  <div class="col-12 tac tarjetaDiv" id="cuentaRowct1">
+                      <div class="col-12 paddingCu" onclick="showDetail('ct1');">
+
+                            <div class="row">
+                          <div class="col-12 tac tipoCuenta">
+                              <span class="cu2">AHORRO</span>
+                              <span class="cu3">8764 8357 8764 8357</span>
+                          </div>
+                            </div>
+
+                            <div class="row">
+                          <div class="col-12 cu4">
+                              <span class="cu2" style="text-transform:uppercase;">Rafael López Pérez</span>
+                          </div>
+                            </div>
+
+                            <div class="row">
+                          <div class="col-6 tal cu5">
+                              <span class="cu6">Saldo</span><br/>$824.11
+                          </div>
+                          <div class="col-6 tar cu7">
+                              <span class="cu6">Disponible</span><br/>$990.32
+                          </div>
+                            </div>
+
+                          <div class="col-12 tar cu8">
+                          </div>
+                      </div>
+                      <div class="col-12 tar cu9">
+                          <div class="cu10" onclick="showDetail('ct1')"><img class="flecha cu11" id="flechact4" src="./assets/imgs/icons/flecha.png" /></div>
+                          <div class="cu10b" onclick="dotsMenu('ct1')"><img class="cu12" src="./assets/imgs/icons/dots.png"/></div>
+                      </div>
+                      <div class="col-6 tac">
+                          <input class="botones cuentasBtns botonesct1 cu13" type="button" id="commonBtn" value="TRANSFERENCIAS"  onclick="goto('components/transferenciasView/view.html')">
+                      </div>
+                      <div class="col-6 tac">
+                          <input class="botones cuentasBtns botonesct1 cu13" type="button" id="commonBtn" value="PAGOS" onclick="goto('components/pagosView/view.html')">
+                      </div>
+                  </div>
+
+                  <div class="detalleTarjeta cu14" id="ct1">
+
+                      <div class="movimientosBancarios3 col-12">
+
+                          <div class="col-3"><div class="tiempos2 active">10</div></div>
+                          <div class="col-3"><div class="tiempos2">20</div></div>
+                          <div class="col-3"><div class="tiempos2">30</div></div>
+                          <div class="col-3"><div class="tiempos2">40</div></div>
+                          <div class="col-12"><h1 id="movimientos3">Movimientos</h1></div>
+
+                      </div>
+
+                      <div class="compras col-12">
+
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Apple Store Apple Store Apple Store</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Mac Store</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Librerias Gandhi</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+
+                          <div class="col-12 pleca"><image class="flecha widthCu" src=images/icons/flecha.png /></div>
+
+                      </div>
+                  </div>
+                  </div>
+              </div>
+
+              <div class="row cuentaRow" style="padding:10px;border-bottom:none;">
+                  <div class="bordertemp col-12" style="">
+                  <div class="col-12 tac tarjetaDiv" id="cuentaRowct2">
+                      <div class="col-12 paddingCu" onclick="showDetail('ct2');">
+
+                          <div class="row">
+                          <div class="col-12 tac tipoCuenta">
+                              <span class="cu2">CORRIENTE</span>
+                              <span class="cu3">9982 1001 9982 1001</span>
+                          </div>
+                        </div>
+
+                          <div class="row">
+                          <div class="col-12 cu4">
+                              <span class="cu2">NOMBRE TITULAR TITULAR</span>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6 tal cu5">
+                              <span class="cu6">Saldo</span><br/>$2833.10
+                          </div>
+                          <div class="col-6 tar cu7">
+                              <span class="cu6">Disponible</span><br/>$1990.32
+                          </div>
+                        </div>
+
+                          <div class="col-12 tar cu8">
+                          </div>
+                      </div>
+                      <div class="col-12 tar cu9">
+                          <div class="cu10" onclick="showDetail('ct2')"><img class="flecha cu11" id="flechact4" src="./assets/imgs/icons/flecha.png" /></div>
+                          <div class="cu10b" onclick="dotsMenu('ct2')"><img class="cu12" src="./assets/imgs/icons/dots.png"/></div>
+                      </div>
+                      <div class="col-6 tac">
+                          <input class="botones cuentasBtns botonesct2 cu13" type="button" id="commonBtn" value="TRANSFERENCIAS"  onclick="goto('components/transferenciasView/view.html')">
+                      </div>
+                      <div class="col-6 tac">
+                          <input class="botones cuentasBtns botonesct2 cu13" type="button" id="commonBtn" value="PAGOS"  onclick="goto('components/pagosView/view.html')">
+                      </div>
+                  </div>
+
+                  <div class="detalleTarjeta cu14" id="ct2">
+
+                      <div class="movimientosBancarios3 col-12">
+
+                          <div class="col-3"><div class="tiempos2 active">10</div></div>
+                          <div class="col-3"><div class="tiempos2">20</div></div>
+                          <div class="col-3"><div class="tiempos2">30</div></div>
+                          <div class="col-3"><div class="tiempos2">40</div></div>
+                          <div class="col-12"><h1 id="movimientos3">Movimientos</h1></div>
+
+                      </div>
+
+                      <div class="compras col-12">
+
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Apple Store Apple Store Apple Store</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Mac Store</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Librerias Gandhi</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+
+                          <div class="col-12 pleca"><image class="flecha widthCu" src=images/icons/flecha.png /></div>
+
+                      </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row cuentaRow" style="padding:10px;border-bottom:none;">
+                  <div class="bordertemp col-12" style="">
+                  <div class="col-12 tac tarjetaDiv" id="cuentaRowct2">
+                      <div class="col-12 paddingCu" onclick="showDetail('ct4');">
+
+                        <div class="row">
+                          <div class="col-12 tac tipoCuenta">
+                              <span class="cu2">TIPO DE CUENTA</span>
+                              <span class="cu3">1652 1987 1652 1987</span>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12 cu4">
+                              <span class="cu2">NOMBRE TITULAR TITULAR</span>
+                          </div>
+                        </div>
+
+                          <div class="row">
+                          <div class="col-6 tal cu5">
+                              <span class="cu6">Saldo</span><br/>$73.10
+                          </div>
+                          <div class="col-6 tar cu7">
+                              <span class="cu6">Disponible</span><br/>$10.12
+                          </div>
+                        </div>
+
+                          <div class="col-12 tar cu8">
+                          </div>
+                      </div>
+                      <div class="col-12 tar cu9">
+                          <div class="cu10" onclick="showDetail('ct4')"><img class="flecha cu11" id="flechact4" src="./assets/imgs/icons/flecha.png" /></div>
+                          <div class="cu10b" onclick="dotsMenu('ct4')"><img class="cu12" src="./assets/imgs/icons/dots.png" /></div>
+                      </div>
+                      <div class="col-6 tac">
+                          <input class="botones cuentasBtns botonesct4 cu13" type="button" id="commonBtn" value="TRANSFERENCIAS"  onclick="goto('components/transferenciasView/view.html')">
+                      </div>
+                      <div class="col-6 tac">
+                          <input class="botones cuentasBtns botonesct4 cu13" type="button" id="commonBtn" value="PAGOS" onclick="goto('components/pagosView/view.html')">
+                      </div>
+                  </div>
+
+                  <div class="detalleTarjeta cu14" id="ct4">
+
+                      <div class="movimientosBancarios3 col-12">
+
+                          <div class="col-3"><div class="tiempos2 active">10</div></div>
+                          <div class="col-3"><div class="tiempos2">20</div></div>
+                          <div class="col-3"><div class="tiempos2">30</div></div>
+                          <div class="col-3"><div class="tiempos2">40</div></div>
+                          <div class="col-12"><h1 id="movimientos3">Movimientos</h1></div>
+
+                      </div>
+
+                      <div class="compras col-12">
+
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Apple Store Apple Store Apple Store</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Mac Store</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Librerias Gandhi</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+
+                          <div class="col-12 pleca"><image class="flecha widthCu" src=images/icons/flecha.png /></div>
+
+                      </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row cuentaRow" style="padding:10px;border-bottom:none;">
+                  <div class="bordertemp col-12" style="">
+                  <div class="col-12 tac tarjetaDiv" id="cuentaRowct2">
+                      <div class="col-12 paddingCu" onclick="showDetail('ct2');">
+
+                        <div class="row">
+                          <div class="col-12 tac tipoCuenta">
+                              <span class="cu2">CORRIENTE</span>
+                              <span class="cu3">9982 1001 9982 1001</span>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12 cu4">
+                              <span class="cu2">NOMBRE TITULAR TITULAR</span>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6 tal cu5">
+                              <span class="cu6">Saldo</span><br/>$2833.10
+                          </div>
+                          <div class="col-6 tar cu7">
+                              <span class="cu6">Disponible</span><br/>$1990.32
+                          </div>
+                        </div>
+
+                          <div class="col-12 tar cu8">
+                          </div>
+                      </div>
+                      <div class="col-12 tar cu9">
+                          <div class="cu10" onclick="showDetail('ct2')"><img class="flecha cu11" id="flechact4" src="./assets/imgs/icons/flecha.png" /></div>
+                          <div class="cu10b" onclick="dotsMenu('ct2')"><img class="cu12" src="./assets/imgs/icons/dots.png"/></div>
+                      </div>
+                      <div class="col-6 tac">
+                          <input class="botones cuentasBtns botonesct2 cu13" type="button" id="commonBtn" value="TRANSFERENCIAS"  onclick="goto('components/transferenciasView/view.html')">
+                      </div>
+                      <div class="col-6 tac">
+                          <input class="botones cuentasBtns botonesct2 cu13" type="button" id="commonBtn" value="PAGOS"  onclick="goto('components/pagosView/view.html')">
+                      </div>
+                  </div>
+
+                  <div class="detalleTarjeta cu14" id="ct2">
+
+                      <div class="movimientosBancarios3 col-12">
+
+                          <div class="col-3"><div class="tiempos2 active">10</div></div>
+                          <div class="col-3"><div class="tiempos2">20</div></div>
+                          <div class="col-3"><div class="tiempos2">30</div></div>
+                          <div class="col-3"><div class="tiempos2">40</div></div>
+                          <div class="col-12"><h1 id="movimientos3">Movimientos</h1></div>
+
+                      </div>
+
+                      <div class="compras col-12">
+
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Apple Store Apple Store Apple Store</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Mac Store</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+                          <div class="row linesRow">
+                              <div class="col-8 tal">
+                                  <span>Librerias Gandhi</span><br/>
+                                  <span class="cu15">06 FEB 18</span>
+                              </div>
+                              <div class="col-4 tar cu16">
+                                  <span class="cu17">$400.00</span>
+                              </div>
+                          </div>
+
+                          <div class="col-12 pleca"><image class="flecha widthCu" src=images/icons/flecha.png /></div>
+
+                      </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
 
 </ion-content>
