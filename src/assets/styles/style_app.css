@@ -41,6 +41,11 @@ body{
     filter: brightness(120%);
 }
 
+.menuHamburgesa{
+	width:100%;
+	height:auto;
+}
+
 .km-button{
     border:none !important;
 }
@@ -160,8 +165,8 @@ body{
 
 .profile{
 	border-radius: 50%;
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 100px;
+    max-width: 100px;
 }
 
 .nombre_usuario {
@@ -223,7 +228,7 @@ div{
 .imageMenu1{
     background-color: #fff;
     border-radius: 10%;
-    padding: 10px;
+    padding: 5px;
     width: 75%;
     cursor: pointer;
 }
@@ -384,7 +389,7 @@ div{
     color: #006838;
     text-align: center;
     align-content: center;
-    display: block;
+    display: inline-flex;
     position: relative;
     z-index: 2;
 }
@@ -606,15 +611,16 @@ div{
     padding: 0px 15px;
     width: fit-content;
     border-radius: 5px;
-    color: #61bf1a !important;
+    color: white;
     font-size: 1.6em !important;
     font-weight: bold !important;
     margin-top:10px;
     margin-bottom:15px;
+		padding-top: 15px;
 }
 
 .nombreSeleccionDiv{
-	background-color:white !important;
+	background-color:#757575 !important;
     text-transform: uppercase;
     border-bottom: 1px solid #505050;
     padding: 0px 0px;
@@ -1376,7 +1382,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
     text-align: -webkit-left !important;
     border: 1px solid #777;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 1em;
     color: #333 !important;
     padding: 10px 15px !important;
 }
@@ -1385,7 +1391,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
     width:100% !important;
     margin-bottom:10px !important;
     height:auto !important;
-    font-size:1.3em !important;
+    font-size:1em !important;
     border: 2px solid #bfbfbf !important;
     border-radius: 10px !important;
     padding: 8px 15px !important;
@@ -1404,6 +1410,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .tarjetaDiv{
+		background-color: white;
     margin-top:10px;
 }
 
@@ -1571,7 +1578,6 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .cu1{
-    border-bottom:1px solid #afafaf;
     padding-bottom:5px;
     margin-bottom: 5px;
 }
@@ -1589,7 +1595,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .cu4{
-    border-bottom:1px solid #c1c1c1;
+
     padding-bottom:5px;
     margin-bottom: 5px;
 }
@@ -1618,6 +1624,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .cu10{
+		width: 50%;
     float:left;
     cursor:pointer;
 }
@@ -1784,7 +1791,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .login5{
-    padding-bottom:40px;
+		padding-bottom:20px;
 }
 
 .login6{
@@ -1794,6 +1801,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .login7{
+		font-size: .65em;
     color:white !important;
 }
 
@@ -1849,7 +1857,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .menu5{
-    display:none;
+
     margin-top:80px;
 }
 
@@ -1858,7 +1866,6 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .menu7{
-    display:none;
     height:30px;
     bottom:20px;
 }
@@ -1931,7 +1938,8 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .pagos3{
-    margin-top:20px;
+    margin-top: 20px;
+		margin-bottom: 30px;
 }
 
 .pagos4{
@@ -1971,7 +1979,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
 
 .pre4{
     border-bottom:1px solid #c1c1c1;
-    padding-bottom:5px;
+    padding-bottom:25px;
     margin-bottom:5px;
     padding-top:5px;
     background-color:#efefef;
@@ -2282,9 +2290,13 @@ border-top: rgba(0,0,0,0.1 ) solid;
     font-weight:bold;
 }
 
-.trans4{
-    display:none;
+.trans44{
+  /*  display:none;*/
     margin:20px 0px;
+}
+
+.trans4{
+	display: none; 
 }
 
 .trans5{
@@ -2304,6 +2316,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
     border-radius:10px;
     padding:0px;
     padding-bottom:10px;
+		background-color: white;
 }
 
 .botonIngresarDos{
@@ -2314,4 +2327,10 @@ border-top: rgba(0,0,0,0.1 ) solid;
 	bottom:30px;
     padding-top:20px;
     font-display: center;
+}
+
+/**CREADOS CON IONIC**/
+
+.padPrincipal{
+	padding: 0px 15px;
 }

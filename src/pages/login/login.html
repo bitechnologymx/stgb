@@ -6,13 +6,59 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <!--<ion-navbar>
     <ion-title>login</ion-title>
-  </ion-navbar>
+  </ion-navbar>-->
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <div class="transaccionExitosa login1" id="pagoResponse">
+            <div class="col-12 tac fondoTransaccion">
+                <div class="col-12 tac">
+                    <div class="col-12 tal login2">
+                        <h1 class="fecha login3">Favor de ingresar tu token</h1>
+                        <input type="text" placeholder="" class="inputContacto login4"/>
+                    </div>
+                </div>
+            </div>
+            <img id="boton_cerrartransaccion" src="./assets/imgs/icons/boton_cerrar.png" onclick="cerrarPagoRespuesta();" width="150" height="150" alt="" />
+        </div>
+        <div class="grid insideGrid">
+
+            <div class="col-12 panama">
+                <div class="col-12 bienvenida">
+                    <h1>BIENVENIDO</h1>
+                </div>
+                <div class="col-12 tac login5">
+                    <img class="profile" src="./assets/imgs/login/foto_perfil.jpg" width="640" height="640" alt="" /><br/>
+                </div>
+                <div class="col-12 tac login6">
+                    <a href="tel:5072705000" class="login7">Solamente ingrese su contraseña si reconoce esta imagen, de no ser así, comuníquese de inmediato con nuestro Call Center al (507) 270-5000</a>
+                </div>
+            </div>
+            <div class="col-12 tac marginLogin2">
+                <img class="touchId" src="./assets/imgs/login/TouchId.png" />
+            </div>
+            <div class="col-12 tac marginLogin">
+                <img class="user" src="./assets/imgs/login/padlock.png" width="128" height="128" />
+                <input id="password" type="password" name="Contrasenia" value="testtesttest">
+            </div>
+            <div  class="col-12 tac alinearLogin">
+                <div class="botonIngresar2 botonLogin" onclick="goto('components/menuView/view.html');">
+                    <h1 class="hLogin">Ingresar</h1>
+                </div>
+            </div>
+            <div class="col-12 tar login9">
+                <a class="login10" href="javascript:goto('components/olvidasteView/view.html')">¿Olvidó su contraseña?</a>
+            </div>
+            <div class="col-12 tal login9">
+                <img class="replyDirect" onclick="goto('components/home/view.html')" src="./assets/imgs/login/replyDirectG.png" />
+            </div>
+            <div class="password col-12"></div>
+
+        </div>
 
 </ion-content>

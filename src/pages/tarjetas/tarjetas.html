@@ -6,13 +6,242 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>tarjetas</ion-title>
-  </ion-navbar>
+<!--  <ion-navbar>
+    <ion-title>Tarjetas</ion-title>
+  </ion-navbar>-->
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <div class="" id="tarjetasGrid">
+
+           <div class="row headerView tar1">
+               <div class="col-2 tal">
+                   <a data-role="button" href="#appDrawer" onclick="menuP();" on-tap="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                       <img class="menuHamburgesa" src="./assets/imgs/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                   </a>
+               </div>
+               <div class="col-10 tac">
+                   <img class="logoStGeorgeMenu" src="./assets/imgs/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();" />
+               </div>
+           </div>
+
+           <div class="col-12 tawc nombreSeleccionDiv">
+               <h2 class="nombreSeleccion">Tarjetas</h2>
+           </div>
+
+           <div id="detalleTarjetas" class="tar2">
+
+               <div class="row cuentaRow">
+                   <div class="col-12 tac tarjetaDiv" id="cuentaRowdt1">
+
+                     <div class="row">
+                       <div class="col-12 tar3">
+                           <span class="tar4">MASTERCARD BLACK REGIONAL</span>
+                               <span class="tar5">**** 8357</span>
+                       </div>
+                     </div>
+
+                     <div class="row">
+                       <div class="col-3 tar6" onclick="showDetail('dt1');">
+                           <img class="tar7" src="./assets/imgs/icons/mastercard.png" />
+                       </div>
+                       <div class="col-9 tar6 row" onclick="showDetail('dt1');">
+                           <div class="col-6 tal tar8">
+                               <span class="tar9">Saldo</span><br/>$824.11
+                           </div>
+                           <div class="col-6 tar tar10">
+                               <span class="tar9">Disponible</span><br/>$990.32
+                           </div>
+                           <div class="col-12 tar tar11">
+                           </div>
+                       </div>
+                     </div>
+
+                       <div class="col-12 tar tar12">
+                           <div class= "tar13" onclick="showDetail('dt1')">
+							   <img id="flechadt1" class="flecha tar14" src="./assets/imgs/icons/flecha.png" />
+						   </div>
+                           <div class= "tar13b" onclick="dotsMenu('dt1')">
+							   <img src="./assets/imgs/icons/dots.png" class="tar15" />
+						   </div>
+                           <input class="botones cuentasBtns botonesdt1 tar16" type="button" id="commonBtn" value="PAGAR TARJETA" onclick="goto('components/pagosView/view.html')">
+                           <input class="botones cuentasBtns botonesdt1 tar16" type="button" id="commonBtn" value="CONSULTA DE PIN">
+                       </div>
+                   </div>
+
+                   <div class="detalleTarjeta tar17" id="dt1">
+
+                       <div class="movimientosBancarios3 col-12">
+
+                           <div class="col-4"><div class="tiempos2 active">CORRIENTES</div></div>
+                           <div class="col-4"><div class="tiempos2">FLOTANTES</div></div>
+                           <div class="col-4"><div class="tiempos2">RESUMEN</div></div>
+                           <div class="col-12"><h1 id="movimientos3">Movimientos</h1></div>
+
+                       </div>
+
+                       <div class="compras col-12">
+
+                           <div class="col-3 tar18">
+                               <span>FECHA</span><br/><br/>
+                               <span>06 FEB 18</span><br/><br/>
+                               <span>01 FEB 18</span><br/>
+                               <span>29 ENE 18</span><br/>
+                               <span>27 ENE 18</span><br/>
+                               <div class="tar18b">
+                               <span class="arrowShow">01 FEB 18<br/></span>
+                               <span class="arrowShow">29 ENE 18<br/></span>
+                               <span class="arrowShow">27 ENE 18<br/></span>
+                               <span class="arrowShow">01 FEB 18<br/></span>
+                               <span class="arrowShow">29 ENE 18<br/></span>
+                               <span class="arrowShow">27 ENE 18<br/></span>
+                               </div>
+                           </div>
+                           <div class="col-6 tal tar19">
+                               <span>DESCRIPCIÓN</span><br/><br/>
+                               <span>Apple Store Apple Store Apple Store Apple Store Apple Store</span><br/>
+                               <span>Restaurante</span><br/>
+                               <span>Pago de servicios</span><br/>
+                               <div class="tar19b">
+                               <span class="arrowShow">Apple Store<br/></span>
+                               <span class="arrowShow">Restaurante<br/></span>
+                               <span class="arrowShow">Pago de servicios<br/></span>
+                               <span class="arrowShow">Apple Store<br/></span>
+                               <span class="arrowShow">Restaurante<br/></span>
+                               <span class="arrowShow">Pago de servicios<br/></span>
+                               </div>
+                           </div>
+                           <div class="col-3 tar tar18">
+                               <span>MONTO</span><br/><br/>
+                               <span>$400.00</span><br/><br/>
+                               <span>$155.00</span><br/>
+                               <span>$256.87</span><br/>
+                               <span>$302.76</span><br/>
+                               <div class="tar18b">
+                               <span class="arrowShow">$155.00<br/></span>
+                               <span class="arrowShow">$256.87<br/></span>
+                               <span class="arrowShow">$302.76<br/></span>
+                               <span class="arrowShow">$155.00<br/></span>
+                               <span class="arrowShow">$256.87<br/></span>
+                               <span class="arrowShow">$302.76<br/></span>
+                               </div>
+                           </div>
+
+                           <div class="col-12 pleca">
+                               <img class="flecha tar20" src="./assets/imgs/icons/flecha.png" onclick="arrowShow()" />
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+
+               <div class="row cuentaRow">
+                   <div class="col-12 tac tarjetaDiv" id="cuentaRowdt2">
+
+                     <div class="row">
+                       <div class="col-12 tar3">
+                           <span class="tar4">TIPO DE TARJETA</span>
+                           <span class="tar5">**** 6767</span>
+                       </div>
+                     </div>
+
+                     <div class="row">
+                       <div class="col-3 tar6" onclick="showDetail('dt2');">
+                           <img src="./assets/imgs/icons/visa.png" class="tar7" />
+                       </div>
+                       <div class="col-9 tar6 row" onclick="showDetail('dt2');">
+                           <div class="col-6 tal tar8">
+                               <span class="tar9">Saldo</span><br/>$924.01
+                           </div>
+                           <div class="col-6 tar tar10">
+                               <span class="tar9">Disponible</span><br/>$990.32
+                           </div>
+                           <div class="col-12 tar tar11">
+                           </div>
+                       </div>
+                     </div>
+
+                       <div class="col-12 tar tar12">
+                           <div class="tar13" onclick="showDetail('dt2')"><img id="flechadt2" class="flecha tar14" src="./assets/imgs/icons/flecha.png" /></div>
+                           <div class="tar13b" onclick="dotsMenu('dt2')"><img src="./assets/imgs/icons/dots.png" class="tar15"/></div>
+                           <input class="botones cuentasBtns botonesdt2 tar16" type="button" id="commonBtn" value="PAGAR TARJETA" onclick="goto('components/pagosView/view.html')">
+                           <input class="botones cuentasBtns botonesdt2 tar16" type="button" id="commonBtn" value="CONSULTA DE PIN" >
+                       </div>
+                   </div>
+
+                   <div class="detalleTarjeta tar17" id="dt2">
+
+                       <div class="movimientosBancarios3 col-12">
+
+                           <div class="col-4"><div class="tiempos2">CORRIENTES</div></div>
+                           <div class="col-4"><div class="tiempos2">FLOTANTES</div></div>
+                           <div class="col-4"><div class="tiempos2 active">RESUMEN</div></div>
+                           <div class="col-12"><h1 id="movimientos3"></h1></div>
+
+                       </div>
+
+                       <div class="compras col-12">
+
+                           <div class="col-12 tac tar tar22">
+                               <span class="tar23">FECHA DE CORTE : 06 FEB 18</span>
+                               <br/>
+                           </div>
+                           <div class="col-8 tal tar21">
+                               <span>DESCRIPCIÓN</span><br/><br/>
+                               <span>Saldo Anterior</span><br/>
+                               <span >Compras y Retiros</span><br/>
+                               <span>Cargos Varios</span><br/>
+                               <span>Cargos por Financ.</span><br/>
+                               <span>Pagos y Créditos</span><br/>
+                           </div>
+                           <div class="col-4 tar tar21">
+                               <span>DÓLARES</span><br/><br/>
+                               <span>$155.00</span><br/>
+                               <span>$302.76</span><br/>
+                               <span>$155.00</span><br/>
+                               <span>$256.87</span><br/>
+                               <span>$302.76</span><br/>
+                           </div>
+                           <div class="col-12 tac tar24"><hr class="tar23"/></div>
+                           <div class="col-8 tal tar21">
+                               <span>Saldo al corte</span><br/><br/>
+                           </div>
+                           <div class="col-4 tar tar21">
+                               <span>$1289.12</span><br/><br/>
+                           </div>
+                           <div class="col-12 tac tar24"><hr class="tar23"/></div>
+                           <div class="col-12 tac tar25">
+                               <span class="tar23">PAGO MÍNIMO</span>
+                           </div>
+                           <div class="col-7 tal tar21">
+                               <span>MONTO</span><br/><br/>
+                               <span>$1287.12</span><br/>
+                           </div>
+                           <div class="col-5 tar tar21">
+                               <span>PAGAR HASTA</span><br/><br/>
+                               <span>06 FEB 2018</span><br/>
+                           </div>
+                           <div class="col-12 tac tar24"><hr class="tar23"/></div>
+                           <div class="col-12 tac tar25">
+                               <span class="tar23">PAGO DE CONTADO</span>
+                           </div>
+                           <div class="col-7 tal tar21">
+                               <span>MONTO</span><br/><br/>
+                               <span>$1287.12</span><br/>
+                           </div>
+                           <div class="col-5 tar tar21">
+                               <span>PAGAR HASTA</span><br/><br/>
+                               <span>06 FEB 2018</span><br/>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+       </div>
 
 </ion-content>

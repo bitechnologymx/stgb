@@ -6,13 +6,128 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>pagos</ion-title>
-  </ion-navbar>
+  <!--<ion-navbar>
+    <ion-title>Pagos</ion-title>
+  </ion-navbar>-->
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <div class="" id="transferenciasGrid">
+
+            <div class="row headerView pagos1">
+                <div class="col-2 tal">
+                    <a data-role="button" href="#appDrawer" onclick="menuP();" on-tap="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                        <img class="menuHamburgesa" src="./assets/imgs/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                    </a>
+                </div>
+                <div class="col-10 tac">
+                    <img class="logoStGeorgeMenu" src="./assets/imgs/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+                </div>
+            </div>
+
+
+            <div class="row">
+            <div class="col-12 tawc nombreSeleccionDiv">
+                <h2 class="nombreSeleccion">Pagos</h2>
+            </div>
+
+          </div>
+
+
+
+            <div class="movimientosBancarios2 row">
+                <div class="col-4" onclick="prestamo()"><div class="tiempos pagos2" id="btnPrestamo">PRÉSTAMOS</div></div>
+                <div class="col-4" onclick="credito()"><div class="tiempos active pagos2" id="btnCredito" style="margin-left:7px;">TARJETAS</div></div>
+                <div class="col-4" onclick="servicios()"><div class="tiempos pagos2" id="btnServicios">SERVICIOS</div></div>
+            </div>
+
+
+            <div class="col-12 formularioDiv pagos3"  id="formPrestamoCredito">
+                <div class="col-12 tal pagos5">
+                    <select name="seleccionTransferencia" class="selectContacto pagos4">
+                        <option value="">Cuenta a debitar</option>
+                        <option>1234 **** **** **56</option>
+                        <option>7847 **** **** **98</option>
+                        <option>3489 **** **** **43</option>
+                        <option>9326 **** **** **23</option>
+                        <option>6534 **** **** **34</option>
+                    </select>
+                </div>
+                <div class="col-12 tal pagos5">
+                    <select name="seleccionTransferencia" class="selectContacto pagos4">
+                        <option value="">Cuenta destino</option>
+                        <option>1234 **** **** **56</option>
+                        <option>7847 **** **** **98</option>
+                        <option>3489 **** **** **43</option>
+                        <option>9326 **** **** **23</option>
+                        <option>6534 **** **** **34</option>
+                    </select>
+                </div>
+                <div class="col-12 tal pagos5" style="margin-bottom:10px;border-top: 1px solid #cacaca;padding-top: 20px;">
+                    <span style="font-size:17px;text-transform: uppercase;font-weight: bold;color: #006838;margin-left: 3px;">Datos del pago</span>
+                </div>
+                <div class="col-12 tal pagos5 pagoDet">
+                    <span>Fecha máxima de pago : 01/01/2018</span>
+                </div>
+                <div class="col-12 tal pagoDet">
+                    <span>Pago mínimo : $2,001.32</span>
+                </div>
+                <div class="col-12 tal pagos3">
+                    <input type="text" value="Monto a pagar" class="inputContacto2"/>
+                </div>
+                <div class="col-12 tac pagos3">
+                    <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR PAGO">
+                </div>
+            </div>
+            <div class="col-12 formularioDiv pagos6" id="formServicios">
+                <div class="col-12 tal">
+                    <select name="seleccionTransferencia" class="selectContacto pagos4">
+                        <option value="">Favoritos</option>
+                        <option>Favorito no 2</option>
+                        <option>Favorito no 3</option>
+                    </select>
+                </div>
+                <div class="col-12 tal pagos5">
+                    <select name="seleccionTransferencia" class="selectContacto pagos4">
+                        <option value="">Cuenta a debitar</option>
+                        <option>1234 **** **** **56</option>
+                        <option>7847 **** **** **98</option>
+                        <option>3489 **** **** **43</option>
+                        <option>9326 **** **** **23</option>
+                        <option>6534 **** **** **34</option>
+                    </select>
+                </div>
+                <div class="col-12 tal pagos5">
+                    <select name="seleccionTransferencia" class="selectContacto pagos4">
+                        <option value="">Categoria</option>
+                        <option>Agua</option>
+                        <option>Electricidad</option>
+                        <option>Teléfono</option>
+                    </select>
+                </div>
+                <div class="col-12 tal pagos5">
+                    <select name="seleccionTransferencia" class="selectContacto pagos4">
+                        <option value="">Servicio</option>
+                        <option>...</option>
+                        <option>....</option>
+                    </select>
+                </div>
+                <div class="col-12 tal pagos5">
+                    <input type="text" value="Cuenta destino" class="inputContacto2"/>
+                </div>
+                <div class="col-12 tal pagos3">
+                    <input type="text" value="Descripción" class="inputContacto2"/>
+                </div>
+                <div class="col-12 tal pagos3">
+                    <input type="text" value="Monto a pagar" class="inputContacto2"/>
+                </div>
+                <div class="col-12 tac pagos3">
+                    <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR PAGO">
+                </div>
+            </div>
+        </div>
 
 </ion-content>
