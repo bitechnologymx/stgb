@@ -6,13 +6,57 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>sucursales</ion-title>
-  </ion-navbar>
+  <!--<ion-navbar>
+    <ion-title>Sucursales</ion-title>
+  </ion-navbar>-->
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <div class="" id="sucursalesLGrid">
+
+           <div class="row headerView">
+               <div class="col-2 tal">
+                   <a data-role="button" href="#appDrawer" onclick="menuP();" on-tap="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                       <img class="menuHamburgesa" src="./assets/imgs/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                   </a>
+               </div>
+               <div class="col-10 tac">
+                   <img class="logoStGeorgeMenu" src="./assets/imgs/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+               </div>
+           </div>
+
+           <div class="col-12 tawc nombreSeleccionDiv" style="border-top:1px solid #b3b3b3;">
+               <h2 class="nombreSeleccion">Sucursales</h2>
+           </div>
+
+           <div id="" class="suc4">
+               <div class="col-12 tawc suc4">
+                   <select name="seleccionTransferencia" class="selectContacto">
+                       <option value="">Todos</option>
+                       <option value="" selected>Altos de Panama</option>
+                       <option value="">Casa Matriz</option>
+                       <option value="">Chitré</option>
+                       <option value="">Costa del Este</option>
+                       <option value="">David</option>
+                       <option value="">Los Andes</option>
+                       <option value="">Los Pueblos</option>
+                   </select>
+               </div>
+               <div class="col-12 tal suc5 suc6 suc8">
+                   <h2>Dirección</h2>
+                   <p>Centro Comercial Country Plaza II - Local N.10</p>
+                   <h2>Teléfono</h2>
+                   <p>(507) 270-5035</p>
+                   <h2>Horario:</h2>
+                   <p>Lunes a Viernes 11:00 a.m. a 6:00 p.m. Sábados 9:00 a.m. a 12:00 m.d.</p>
+               </div>
+               <div class="col-12 tawc">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.2948326711953!2d-79.53082568566607!3d9.036846993515445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca827b2f55c05%3A0xdeb7456c9e52a0f4!2sSt.+Georges+Bank+%7C+Altos+de+Panam%C3%A1!5e0!3m2!1ses!2sus!4v1517957767549" width="100%" height="450" frameborder="0" class="suc7" allowfullscreen></iframe>
+               </div>
+           </div>
+       </div>
 
 </ion-content>

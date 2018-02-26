@@ -15,4 +15,93 @@
 
 <ion-content padding>
 
+  <div class="" id="menuGrid" style="">
+
+           <div class="row headerView menu1">
+               <div class="col-2 tal padPrincipal">
+                   <a data-role="button" href="#appDrawer" onclick="menuP();" on-tap="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                       <img class="menuHamburgesa" src="./assets/imgs/menu/icono_hamburguesa.png" alt="" />
+                   </a>
+               </div>
+               <div class="col-10 tac">
+                   <img class="logoStGeorgeMenu" src="./assets/imgs/logos/Logo_color.png" alt="Logo St. George"/>
+               </div>
+           </div>
+
+           <!--<div class="col-12 tac menu2">
+               <h2 class="nombreCliente">Rafael López Pérez</h2>
+               <h3>
+                   <span class="menu3">Último ingreso :</span>
+                   <span class="menu4"> 5 febrero 2018  1:30pm</span>
+               </h3>
+           </div>-->
+
+           <div id="menuPrincipal" class="menu5" style="margin-top:10%;">
+               <div class="row iconsMenu">
+                   <div class="col-1"></div>
+                   <div class="col-5 tac">
+                       <img src="./assets/imgs/menu/icono_cuenta.png" class="imageMenu1" id="cuentasMenu" onclick="selectMenu('components/cuentasView/view.html',this);"/>
+                   </div>
+                   <div class="col-5 tac">
+                       <img src="./assets/imgs/menu/icono_tarjeta.png" class="imageMenu1" id="tarjetasMenul" onclick="selectMenu('components/tarjetasView/view.html',this);"/>
+                   </div>
+                   <div class="col-1"></div>
+               </div>
+               <div class="row iconsMenu menu6">
+                   <div class="col-1"></div>
+                   <div class="col-5 tac">
+                       <span class="textMenu">Cuentas</span>
+                   </div>
+                   <div class="col-5 tac">
+                       <span class="textMenu">Tarjetas</span>
+                   </div>
+                   <div class="col-1"></div>
+               </div>
+               <div class="row iconsMenu menu6">
+                   <div class="col-1"></div>
+                   <div class="col-5 tac">
+                       <img src="./assets/imgs/menu/icono_solicitarprestamo.png" class="imageMenu1" id="pagosMenu" onclick="selectMenu('components/prestamoView/view.html',this);"/>
+                   </div>
+                   <div class="col-5 tac">
+                       <img src="./assets/imgs/menu/icono_transferir.png" class="imageMenu1" id="tarjetasMenu" onclick="selectMenu('components/transferenciasView/view.html',this);"/>
+                   </div>
+                   <div class="col-1"></div>
+               </div>
+               <div class="row iconsMenu menu6">
+                   <div class="col-1"></div>
+                   <div class="col-5 tac">
+                       <span class="textMenu">Préstamos</span>
+                   </div>
+                   <div class="col-5 tac">
+                       <span class="textMenu">Transferencias</span>
+                   </div>
+                   <div class="col-1"></div>
+               </div>
+               <div class="row iconsMenu menu6">
+                   <div class="col-1"></div>
+                   <div class="col-5 tac">
+                       <img src="./assets/imgs/menu/icono_pagar.png" class="imageMenu1" id="cuentasMenul" onclick="selectMenu('components/pagosView/view.html',this);"/>
+                   </div>
+
+                   <div class="col-5 tac">
+                       <img src="./assets/imgs/menu/icono_sucursales.png" class="imageMenu1" id="transferenciasMenu" onclick="selectMenu('components/sucursalesView/view.html',this);"/>
+                   </div>
+                   <div class="col-1"></div>
+               </div>
+               <div class="row iconsMenu menu6">
+                   <div class="col-1"></div>
+                   <div class="col-5 tac">
+                       <span class="textMenu">Pagos</span>
+                   </div>
+                   <div class="col-5 tac">
+                       <span class="textMenu">Sucursales</span>
+                   </div>
+                   <div class="col-1"></div>
+               </div>
+               <div class="col-12 tac disclaimer botonIngresar menu7" id="footerMenuPrincipal">
+                   <span class="menu8">St. Georges Bank. Derechos reservados.</span>
+               </div>
+           </div>
+       </div>
+
 </ion-content>
