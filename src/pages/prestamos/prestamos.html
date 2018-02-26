@@ -6,13 +6,155 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>prestamos</ion-title>
-  </ion-navbar>
+  <!--<ion-navbar>
+    <ion-title>Préstamos</ion-title>
+  </ion-navbar>-->
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <div class="grid insideGr" id="tarjetasGrid">
+
+            <div class="row headerView pre1">
+                <div class="col-2 tal">
+                    <a data-role="button" href="#appDrawer" onclick="menuP();" on-tap="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                        <img class="menuHamburgesa" src="./assets/imgs/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                    </a>
+                </div>
+                <div class="col-10 tac">
+                    <img class="logoStGeorgeMenu" src="./assets/imgs/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+                </div>
+            </div>
+
+            <div class="col-12 tawc nombreSeleccionDiv">
+                <h2 class="nombreSeleccion">Préstamos</h2>
+            </div>
+
+            <div id="detalleTarjetas" class="pre2">
+
+                <div class="row cuentaRow">
+                    <div class="col-12 tac tarjetaDiv" id="cuentaRowpt1">
+
+                        <div class="row">
+                        <div class="col-12 pre3" onclick="showDetail2('pt1');">
+                            <div class="col-12 pre4">
+                                <span class="pre5">NOMBRE PRODUCTO</span>
+                                <span class="pre6">1277 8357</span>
+                            </div>
+                          </div>
+                        </div>
+
+                          <div class="row">
+                            <div class="col-6 tal pre7">
+                                <span class="pre8">Saldo</span><br/>$824.11
+                            </div>
+                            <div class="col-6 tar pre9">
+                                <span class="pre8">Cuota</span><br/>$127.11
+                            </div>
+                          </div>
+
+                            <div class="row">
+                            <div class="col-12 tac pre10">
+                                <div class="pre11">
+                                <img id="flechapt1" class="flecha pre12" src="./assets/imgs/icons/flecha.png" /></div>
+                            </div>
+                          </div>
+
+                    </div>
+
+                    <div class="detalleTarjeta pre13" id="pt1">
+
+                        <div class="compras col-12 tac pre14">
+                            <div class="col-12 tac">
+                                <span class="pre15">FECHA DE PAGO: 06 FEB 2018</span>
+                                <span></span><br/>
+                            </div>
+                            <div class="col-12 tac">
+                                <input class="botones cuentasBtns botonespt1 pre16" type="button" id="commonBtn" value="PAGAR PRÉSTAMO">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row cuentaRow">
+                    <div class="col-12 tac tarjetaDiv" id="cuentaRowpt3">
+                        <div class="col-12 pre3" onclick="showDetail2('pt3');">
+                            <div class="col-12 pre4">
+                                <span class="pre5">NOMBRE PRODUCTO</span>
+                                <span class="pre6">1287 5237</span>
+                            </div>
+
+                            <div class="row">
+                            <div class="col-6 tal pre7">
+                                <span class="pre8">Saldo</span><br/>$124.11
+                            </div>
+                            <div class="col-6 tar pre9">
+                                <span class="pre8">Cuota</span><br/>$137.00
+                            </div>
+                          </div>
+
+                            <div class="col-12 tac pre10">
+                                <div class="pre11">
+                                <img id="flechapt3" class="flecha pre12"  src="./assets/imgs/icons/flecha.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detalleTarjeta pre13" id="pt3">
+
+                        <div class="compras col-12 tac pre14">
+                            <div class="col-12 tac">
+                                <span class="pre15">FECHA DE PAGO: 01 FEB 2018</span>
+                                <span></span><br/>
+                            </div>
+                            <div class="col-12 tac">
+                                <input class="botones cuentasBtns botonespt3 pre16" type="button" id="commonBtn" value="PAGAR PRESTAMO">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row cuentaRow">
+                    <div class="col-12 tac tarjetaDiv" id="cuentaRowpt2">
+                        <div class="col-12 pre3" onclick="showDetail2('pt2');">
+                            <div class="col-12 pre4">
+                                <span class="pre5">NOMBRE PRODUCTO</span>
+                                <span class="pre6">1277 8357</span>
+                            </div>
+
+                            <div class="row">
+                            <div class="col-6 tal pre7">
+                                <span class="pre8">Saldo</span><br/>$824.11
+                            </div>
+                            <div class="col-6 tar pre9">
+                                <span class="pre8">Cuota</span><br/>$127.11
+                            </div>
+                          </div> 
+
+                            <div class="col-12 tac pre10">
+                                <div class="pre11">
+                                <img id="flechapt2" class="flecha pre12 "  src="./assets/imgs/icons/flecha.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detalleTarjeta pre13" id="pt2">
+
+                        <div class="compras col-12 tac pre14">
+                            <div class="col-12 tac">
+                                <span class="pre15">FECHA DE PAGO: 06 FEB 2018</span>
+                                <span></span><br/>
+                            </div>
+                            <div class="col-12 tac">
+                                <input class="botones cuentasBtns botonespt2 pre16" type="button" id="commonBtn" value="PAGAR PRESTAMO">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 </ion-content>

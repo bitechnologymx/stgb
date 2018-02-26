@@ -6,13 +6,208 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>transferencias</ion-title>
-  </ion-navbar>
+  <!--<ion-navbar>
+    <ion-title>Transferencias</ion-title>
+  </ion-navbar>-->
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <div class="transaccionExitosa trans1" id="transferirResponse">
+
+          <div class="col-12 tac fondoTransaccion">
+
+              <h1>Su instrucción con los siguientes datos ha sido recibida.</h1>
+
+              <div class="col-12 tac transaccionDetalle">
+                  <h1>Fecha y Hora de Registro de la Transacción</h1>
+                  <h2>20 Octubre 2017 07:57:91AM</h2>
+                  <h1>Débito a la cuenta</h1>
+                  <h2>12918287187278</h2>
+                  <h1>Crédito a la cuenta</h1>
+                  <h2>96172876126377</h2>
+                  <h1>Monto en cifras ($US)</h1>
+                  <h2>$1298.17</h2>
+                  <h1>Monto en letras ($US)</h1>
+                  <h2>MIL DOLARES CON 00/100 CTS</h2>
+                  <h1>Propósito del crédito</h1>
+                  <h2>.........</h2>
+              </div>
+          </div>
+          <img id="boton_cerrartransaccion" src="images/icons/boton_cerrar.png" onclick="cerrarTransferirRespuesta();" width="150" height="150" alt="" />
+      </div>
+
+      <div class="grid insideGrid" id="transferenciasGrid">
+
+          <div class="row headerView trans2">
+              <div class="col-2 tal">
+                  <a data-role="button" href="#appDrawer" onclick="menuP();" on-tap="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                      <img class="menuHamburgesa" src="./assets/imgs/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                  </a>
+              </div>
+              <div class="col-10 tac">
+                  <img class="logoStGeorgeMenu" src="./assets/imgs/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+              </div>
+          </div>
+
+          <div class="col-12 tawc nombreSeleccionDiv">
+              <h2 class="nombreSeleccion">Transferencias</h2>
+          </div>
+
+          <div class="movimientosBancarios2 col-12">
+              <!--<div class="col-4" onclick="terceros()"><div class="tiempos trans3" id="btnTercero">TERCEROS</div></div>-->
+              <div class="col-6" onclick="propia()"><div class="tiempos active trans3" id="btnPropia">PROPIAS</div></div>
+              <div class="col-6" onclick="ach()"><div class="tiempos trans3" id="btnAch">TERCEROS</div></div>
+              <!--<div class="col-4" onclick="ach()"><div class="tiempos trans3" id="btnAch">ACH</div></div>-->
+          </div>
+
+          <div class="col-12 formularioDiv trans4" id="formAch">
+              <div class="col-12 tal">
+                  <select name="seleccionTransferencia" class="selectContacto trans5">
+                      <option value="">Favoritos</option>
+                      <option>Favorito no 2</option>
+                      <option>Favorito no 3</option>
+                  </select>
+              </div>
+              <div class="col-12 tar trans66" style="margin-top:0px;">
+                  <input class="botones botonTransferencia" type="button" id="transferirBtn" onclick="transferirNuevo();" value="NUEVO">
+              </div>
+            </div>
+
+              <div class="col-12 tal trans66 transNuevo">
+                  <select name="seleccionTransferencia" class="selectContacto trans5">
+                      <option value="">Cuenta a debitar</option>
+                      <option>1234 **** **** **56</option>
+                      <option>7847 **** **** **98</option>
+                      <option>3489 **** **** **43</option>
+                      <option>9326 **** **** **23</option>
+                      <option>6534 **** **** **34</option>
+                  </select>
+              </div>
+              <div class="col-12 tal trans66 transNuevo">
+                  <input type="text"  class="inputContacto2" value="Monto a transferir"/>
+              </div>
+              <div class="col-12 tal trans77 transNuevo">
+                  <input type="text"  class="inputContacto2"  value="Nombre del beneficiario"/>
+              </div>
+              <div class="col-12 tal trans77 transNuevo">
+                  <select name="seleccionTransferencia" class="selectContacto trans5">
+                      <option value="">Banco destino</option>
+                      <option value="">St. George Bank</option>
+                      <option>Banco General</option>
+                      <option>Banco Pichincha</option>
+                  </select>
+              </div>
+              <div class="col-12 tal trans66 transNuevo">
+                  <select name="seleccionTransferencia" class="selectContacto trans5">
+                      <option value="">Producto</option>
+                      <option>Cuenta corriente</option>
+                      <option>Cuenta de ahorro</option>
+                      <option>Tarjeta de crédito</option>
+                      <option>Prestamo</option>
+                  </select>
+              </div>
+              <div class="col-12 tal trans66 transNuevo">
+                  <input type="text"  class="inputContacto2" value="Cuenta Destino"/>
+              </div>
+              <div class="col-12 tal trans77 transNuevo">
+                  <input type="text"  class="inputContacto2" value="Propósito"/>
+              </div>
+              <div class="col-12 tal trans77 transNuevo">
+                  <input type="text" class="inputContacto2" value="Correo beneficiario"/>
+              </div>
+              <div class="col-12 tac trans77 transNuevo" >
+                  <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR TRANSFERENCIA">
+              </div>
+
+
+
+
+
+
+        <div class="hide">
+          <div class="col-12 formularioDiv trans4" id="formTercero">
+              <div class="col-12 tal">
+                  <select name="seleccionTransferencia" class="selectContacto trans5">
+                      <option value="">Favoritos</option>
+                      <option>Favorito no 2</option>
+                      <option>Favorito no 3</option>
+                  </select>
+              </div>
+              <div class="col-12 tal trans66" >
+                  <select name="seleccionTransferencia" class="selectContacto trans5">
+                      <option value="">Tipo de operación</option>
+                      <option>Crédito a cuenta corriente</option>
+                      <option>Ahorro</option>
+                      <option>Préstamo</option>
+                      <option>Tarjeta</option>
+                  </select>
+              </div>
+              <div class="col-12 tal trans66">
+                  <select name="seleccionTransferencia" class="selectContacto trans5">
+                      <option value="">Cuenta a debitar</option>
+                      <option>1234 **** **** **56</option>
+                      <option>7847 **** **** **98</option>
+                      <option>3489 **** **** **43</option>
+                      <option>9326 **** **** **23</option>
+                      <option>6534 **** **** **34</option>
+                  </select>
+              </div>
+              <div class="col-12 tal trans66">
+                  <input type="text" value="Cuenta destino" class="inputContacto2"/>
+              </div>
+              <div class="col-12 tal trans77">
+                  <input type="text" value="Beneficiario" class="inputContacto2"/>
+              </div>
+              <div class="col-12 tal trans77">
+                  <input type="text" value="Monto a transferir" class="inputContacto2"/>
+              </div>
+              <div class="col-12 tal trans77">
+                  <input type="text" value="Propósito" class="inputContacto2"/>
+              </div>
+              <div class="col-12 tac trans77">
+                  <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR TRANSFERENCIA">
+              </div>
+
+          </div>
+        </div> <!--hide-->
+
+
+
+          <div class="col-12 formularioDiv trans44" id="formPropia">
+              <div class="col-12 tal">
+                  <select name="seleccionTransferencia" class="selectContacto trans5">
+                      <option value="">Cuenta a debitar</option>
+                      <option>1234 **** **** **56</option>
+                      <option>7847 **** **** **98</option>
+                      <option>3489 **** **** **43</option>
+                      <option>9326 **** **** **23</option>
+                      <option>6534 **** **** **34</option>
+                  </select>
+              </div>
+              <div class="col-12 tal trans6">
+                  <select name="seleccionTransferencia" class="selectContacto trans5">
+                      <option value="">Cuenta destino</option>
+                      <option>1234 **** **** **56</option>
+                      <option>7847 **** **** **98</option>
+                      <option>3489 **** **** **43</option>
+                      <option>9326 **** **** **23</option>
+                      <option>6534 **** **** **34</option>
+                  </select>
+              </div>
+              <div class="col-12 tal trans7">
+                  <input type="text" value="Monto a transferir" class="inputContacto2"/>
+              </div>
+              <div class="col-12 tal trans7">
+                  <input type="text" value="Propósito" class="inputContacto2"/>
+              </div>
+              <div class="col-12 tac trans7">
+                  <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR TRANSFERENCIA">
+              </div>
+
+          </div>
+      </div>
 
 </ion-content>

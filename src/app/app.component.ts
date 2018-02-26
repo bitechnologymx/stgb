@@ -32,7 +32,20 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Contacto', component: ContactoPage},
-      { title: 'Cuentas', component: CuentasPage}
+      { title: 'Cuentas', component: CuentasPage},
+      { title: 'List', component: ListPage },
+      { title: 'Contacto', component: ContactoPage },
+      { title: 'Cuentas', component: CuentasPage },
+      { title: 'Login', component: LoginPage },
+      { title: 'Principal', component: PrincipalPage },
+      { title: 'Pagos', component: PagosPage },
+      { title: 'Prestamos', component: PrestamosPage },
+      { title: 'Recuperar Contraseña', component: PasswordPage },
+      { title: 'Sucursales', component: SucursalesPage },
+      { title: 'Tarjetas', component: TarjetasPage },
+      { title: 'Transferencias', component: TransferenciasPage }
+
+>>>>>>> master
     ];
 
   }
