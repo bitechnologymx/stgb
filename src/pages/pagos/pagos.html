@@ -39,14 +39,43 @@
 
 
             <div class="movimientosBancarios2 row">
-                <div class="col-4" onclick="prestamo()"><div class="tiempos pagos2" id="btnPrestamo">PRÉSTAMOS</div></div>
+              <div class="col-12">
+
+                <button class="col-4 botonRedondo active" ion-button round outline>PRÉSTAMOS</button>
+                <button class="col-3 botonRedondo" ion-button round outline>TARJETAS</button>
+                <button class="col-4 botonRedondo " ion-button round outline>SERVICIOS</button>
+              </div>
+
+              <!--  <div class="col-4" onclick="prestamo()"><div class="tiempos pagos2" id="btnPrestamo">PRÉSTAMOS</div></div>
                 <div class="col-4" onclick="credito()"><div class="tiempos active pagos2" id="btnCredito" style="margin-left:7px;">TARJETAS</div></div>
-                <div class="col-4" onclick="servicios()"><div class="tiempos pagos2" id="btnServicios">SERVICIOS</div></div>
+                <div class="col-4" onclick="servicios()"><div class="tiempos pagos2" id="btnServicios">SERVICIOS</div></div>-->
             </div>
+
+            <ion-item class="cDebitar">
+            <ion-label>Cuenta a Debitar</ion-label>
+            <ion-select [(ngModel)]="CuentaDebitar">
+              <ion-option value="Cuenta1">1234 **** **** **56</ion-option>
+              <ion-option value="Cuenta2">7847 **** **** **98</ion-option>
+              <ion-option value="Cuenta3">3489 **** **** **43</ion-option>
+              <ion-option value="Cuenta4">9326 **** **** **23</ion-option>
+              <ion-option value="Cuenta5">6534 **** **** **34</ion-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item class="cDebitar">
+          <ion-label>Cuenta Destino</ion-label>
+          <ion-select [(ngModel)]="CuentaDestino">
+            <ion-option value="Cuenta1">1234 **** **** **56</ion-option>
+            <ion-option value="Cuenta2">7847 **** **** **98</ion-option>
+            <ion-option value="Cuenta3">3489 **** **** **43</ion-option>
+            <ion-option value="Cuenta4">9326 **** **** **23</ion-option>
+            <ion-option value="Cuenta5">6534 **** **** **34</ion-option>
+          </ion-select>
+        </ion-item>
 
 
             <div class="col-12 formularioDiv pagos3"  id="formPrestamoCredito">
-                <div class="col-12 tal pagos5">
+              <!--  <div class="col-12 tal pagos5">
                     <select name="seleccionTransferencia" class="selectContacto pagos4">
                         <option value="">Cuenta a debitar</option>
                         <option>1234 **** **** **56</option>
@@ -65,9 +94,9 @@
                         <option>9326 **** **** **23</option>
                         <option>6534 **** **** **34</option>
                     </select>
-                </div>
-                <div class="col-12 tal pagos5" style="margin-bottom:10px;border-top: 1px solid #cacaca;padding-top: 20px;">
-                    <span style="font-size:17px;text-transform: uppercase;font-weight: bold;color: #006838;margin-left: 3px;">Datos del pago</span>
+                </div>-->
+                <div class="col-12 tal pagos5 datosPago">
+                    <span>Datos del pago</span>
                 </div>
                 <div class="col-12 tal pagos5 pagoDet">
                     <span>Fecha máxima de pago : 01/01/2018</span>
@@ -75,13 +104,25 @@
                 <div class="col-12 tal pagoDet">
                     <span>Pago mínimo : $2,001.32</span>
                 </div>
-                <div class="col-12 tal pagos3">
+
+                <ion-item class="cDebitar">
+                  <ion-input value="" type="number" placeholder="Monto a Pagar"></ion-input>
+                </ion-item>
+
+                <!--<div class="col-12 tal pagos3">
                     <input type="text" value="Monto a pagar" class="inputContacto2"/>
-                </div>
-                <div class="col-12 tac pagos3">
+                </div>-->
+
+                  <button ion-button class="pagoBoton">REALIZAR PAGO</button>
+
+
+              <!--  <div class="col-12 tac pagos3">
                     <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR PAGO">
-                </div>
+                </div>-->
             </div>
+
+<!--FALTA ACTUALIZAR ESTA SECCIÓN DE PAGOS-->
+
             <div class="col-12 formularioDiv pagos6" id="formServicios">
                 <div class="col-12 tal">
                     <select name="seleccionTransferencia" class="selectContacto pagos4">

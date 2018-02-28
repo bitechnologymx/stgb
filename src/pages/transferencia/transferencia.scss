@@ -1,0 +1,125 @@
+page-transferencia {
+
+  .scroll-content{
+    padding: 0px !important;
+  }
+
+  ion-select{
+    font-size:1em;
+    padding: 8px 15px !important;
+    color: #333 !important;
+    background-color: white !important;
+    /*margin-top: -15px !important;*/
+
+  }
+
+  .margenTrans{
+    margin-bottom: 5%;
+  }
+
+  .selectContacto2{
+      width:90%;
+      margin-left: 5%;
+    /*  margin-top:10px;*/
+      height:8%;
+      font-size:1em;
+      border: 2px solid #bfbfbf !important;
+      border-radius: 10px !important;
+      padding: 8px 0px 8px 10px !important;
+      color: #333 !important;
+      background-color: white !important;
+      margin-bottom: 5%;
+  }
+
+
+
+  ion-label{
+  /*  margin-top: -5px !important;*/
+    color: #333 !important;
+}
+
+  .button-inner{
+    height: 30%;
+  }
+
+  .item-cover{
+    height: 0px !important;
+  }
+
+  .select-wp{
+    border: none !important;
+    padding-bottom: 0px !important;
+  }
+
+  .nuevo{
+    background-color: #006338;
+    font-weight: 600;
+    color: white;
+    margin: 0% 5%;
+    float: right;
+    margin-top:5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+  }
+
+ .transferirBoton {
+  background-color: #006338;
+  font-weight: 600;
+  color: white;
+  margin-left: 20%;
+  margin-top:5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.input-wrapper{
+  margin-top: -20px !important;
+}
+
+.item-ios.item-block .item-inner {
+    padding-right: 8px;
+    padding-right: 8px;
+    border-bottom: none;
+  }
+
+  .item-md.item-block .item-inner {
+      padding-right: 8px;
+      padding-right: 8px;
+      border-bottom: none;
+    }
+
+    .select-wp{
+      border: none !important;
+    }
+
+    .text-input-wp{
+        border: 2px solid transparent;
+      }
+
+      .item-wp.item-input.item-input-has-focus .text-input, item-wp.item-input.input-has-focus .text-input{
+      border-color: transparent !important;
+    }
+
+    //// BOTONES
+
+    .botonRedondo{
+      font-weight: bold !important;
+      display: inline-flex;
+      cursor: pointer;
+      padding: 2px 15px;
+      border: solid 1.5px transparent;
+      color: #006338;
+    }
+
+    .botonRedondo.active{
+      border: solid 1.5px rgba(97,191,26,1);
+    }
+
+    .botonRedondo:hover{
+        border: solid 1.5px rgba(97,191,26,1);
+    }
+
+
+
+
+}

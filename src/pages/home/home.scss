@@ -1,3 +1,38 @@
 page-home {
 
+  .menuHamburgesaHome{
+    width: 10%;
+    height: auto;
+    padding-bottom: 4px;
+  }
+
+  .ingresarBoton {
+   background-color: #006338;
+   font-weight: 600;
+   color: white;
+   width: 80%;
+   margin-top:5%;
+   margin-bottom: 5%;
+   border-radius: 10px;
+ }
+
+  .transparencia{
+    display:none;
+    background-color:rgba(0, 0, 0, 0.6);
+  }
+
+  #video-background {
+      height: auto;
+      position: fixed;
+      width: 100%;
+      margin-top: -2px;
+  }
+
+  .home6{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    color: white;
+    padding-bottom: 15px;
+  }
+
 }

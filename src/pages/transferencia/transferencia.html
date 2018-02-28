@@ -1,0 +1,116 @@
+<!--
+  Generated template for the TransferenciaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <!--<ion-navbar>
+    <ion-title>transferencia</ion-title>
+  </ion-navbar>-->
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="row headerView trans2">
+      <div class="col-2 tal">
+          <a data-role="button" href="#appDrawer" onclick="menuP();" on-tap="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+              <img class="menuHamburgesa" src="./assets/imgs/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+          </a>
+      </div>
+      <div class="col-10 tac">
+          <img class="logoStGeorgeMenu" src="./assets/imgs/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+      </div>
+  </div>
+
+  <div class="col-12 tawc nombreSeleccionDiv">
+      <h2 class="nombreSeleccion">Transferencias</h2>
+  </div>
+        <div class="row">
+          <div class="movimientosBancarios2 margenTrans col-12">
+              <!--<div class="col-4" onclick="terceros()"><div class="tiempos trans3" id="btnTercero">TERCEROS</div></div>-->
+
+              <button class="col-6 botonRedondo active" ion-button round outline>PROPIAS</button>
+              <button class="col-6 botonRedondo" ion-button round outline>TERCEROS</button>
+
+            <!--  <div class="col-6" onclick="propia()"><div class="tiempos active trans3" id="btnPropia">PROPIAS</div></div>
+              <div class="col-6" onclick="ach()"><div class="tiempos trans3" id="btnAch">TERCEROS</div></div>-->
+              <!--<div class="col-4" onclick="ach()"><div class="tiempos trans3" id="btnAch">ACH</div></div>-->
+          </div>
+        </div>
+
+            <ion-item class="selectContacto2">
+            <ion-label>Favoritos</ion-label>
+            <ion-select [(ngModel)]="Favoritos">
+              <ion-option value="Favorito1">Favorito1</ion-option>
+              <ion-option value="Favorito2">Favorito2</ion-option>
+              <ion-option value="Favorito3">Favorito3</ion-option>
+              <ion-option value="Favorito4">Favorito4</ion-option>
+            </ion-select>
+          </ion-item>
+
+          <button ion-button class="nuevo">NUEVO</button>
+
+          <ion-item class="selectContacto2">
+          <ion-label>Cuenta a debitar</ion-label>
+          <ion-select [(ngModel)]="cuentaDebitar">
+            <ion-option value="">Escoge una cuenta</ion-option>
+            <ion-option value="Cuenta1">1234 **** **** **56</ion-option>
+            <ion-option value="Cuenta2">7847 **** **** **98</ion-option>
+            <ion-option value="Cuenta3">3489 **** **** **43</ion-option>
+            <ion-option value="Cuenta4">9326 **** **** **23</ion-option>
+            <ion-option value="Cuenta5">6534 **** **** **34</ion-option>
+          </ion-select>
+          </ion-item>
+
+
+          <ion-item class="selectContacto2">
+            <ion-input value="" type="number" placeholder="Monto a Transferir"></ion-input>
+          </ion-item>
+
+
+          <ion-item class="selectContacto2">
+            <ion-input value="" type="text" placeholder="Nombre del Beneficiario"></ion-input>
+          </ion-item>
+
+          <ion-item class="selectContacto2">
+          <ion-label>Banco Destino</ion-label>
+          <ion-select [(ngModel)]="cuentaDebitar">
+            <ion-option value="StGeorgeBank">St. George Bank</ion-option>
+            <ion-option value="BancoGeneral">Banco General</ion-option>
+            <ion-option value="BancoPichincha">Banco Pichincha</ion-option>
+          </ion-select>
+          </ion-item>
+
+          <ion-item class="selectContacto2">
+          <ion-label>Producto</ion-label>
+          <ion-select [(ngModel)]="cuentaDebitar">
+            <ion-option value="CuentaCorriente">Cuenta Corriente</ion-option>
+            <ion-option value="CuentaAhorro">Cuenta Ahorro</ion-option>
+            <ion-option value="TarjetaCredito">Tarjeta de Crédito</ion-option>
+            <ion-option value="Prestamo">Préstamo</ion-option>
+          </ion-select>
+          </ion-item>
+
+          <ion-item class="selectContacto2">
+            <ion-input value="" type="number" placeholder="Cuenta Destino"></ion-input>
+          </ion-item>
+
+
+          <ion-item class="selectContacto2">
+            <ion-input value="" type="text" placeholder="Propósito"></ion-input>
+          </ion-item>
+
+          <ion-item class="selectContacto2">
+            <ion-input value="" type="email" placeholder="Correo Beneficiario"></ion-input>
+          </ion-item>
+
+
+          <button ion-button class="transferirBoton">REALIZAR TRANSFERENCIA</button>
+
+
+
+</ion-content>

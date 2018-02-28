@@ -32,8 +32,26 @@
                <h2 class="nombreSeleccion">Sucursales</h2>
            </div>
 
+
+
+
+
+
            <div id="" class="suc4">
-               <div class="col-12 tawc suc4">
+
+             <ion-item class="cSucursales">
+             <ion-select placeholder="Elija una sucursal" [(ngModel)]="Sucursales">
+               <ion-option value="Suc1">Altos de Panamá</ion-option>
+               <ion-option value="Suc2">Casa Matriz</ion-option>
+               <ion-option value="Suc3">Chitré</ion-option>
+               <ion-option value="Suc2">Costa del Este</ion-option>
+               <ion-option value="Suc2">David</ion-option>
+               <ion-option value="Suc2">Los Andes</ion-option>
+               <ion-option value="Suc2">Los Pueblos</ion-option>
+             </ion-select>
+           </ion-item>
+
+            <!--   <div class="col-12 tawc suc4">
                    <select name="seleccionTransferencia" class="selectContacto">
                        <option value="">Todos</option>
                        <option value="" selected>Altos de Panama</option>
@@ -44,7 +62,7 @@
                        <option value="">Los Andes</option>
                        <option value="">Los Pueblos</option>
                    </select>
-               </div>
+               </div>-->
                <div class="col-12 tal suc5 suc6 suc8">
                    <h2>Dirección</h2>
                    <p>Centro Comercial Country Plaza II - Local N.10</p>

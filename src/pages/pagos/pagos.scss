@@ -17,4 +17,102 @@ page-pagos {
     font-size: 15px;
     color: #444444;
   }
+
+  .pagoBoton {
+   background-color: #006338;
+   font-weight: 600;
+   color: white;
+   margin-left: 28%;
+   margin-top:5%;
+   margin-bottom: 5%;
+   border-radius: 10px;
+ }
+
+  //ELEMENTOS PARA LOS FORMULARIOS ESTÁN AQUI
+
+  .item-wp.item-input.item-input-has-focus .text-input, item-wp.item-input.input-has-focus .text-input{
+  border-color: transparent !important;
+}
+
+  .select-wp{
+    border: none !important;
+  }
+
+  .text-input-wp{
+      border: 2px solid transparent;
+    }
+
+  .item-ios.item-block .item-inner {
+      padding-right: 8px;
+      padding-right: 8px;
+      border-bottom: none;
+    }
+
+    .item-md.item-block .item-inner {
+        padding-right: 8px;
+        padding-right: 8px;
+        border-bottom: none;
+      }
+
+      .cDebitar{
+          width:90%;
+          margin-left: 5%;
+        /*  margin-top:10px;*/
+          height:30px;
+          font-size:1em;
+          border: 2px solid #bfbfbf !important;
+          border-radius: 10px !important;
+          padding: 8px 0px 8px 10px !important;
+          color: #333 !important;
+          background-color: white !important;
+          margin-bottom: 5%;
+          margin-top: 5%;
+      }
+
+      .input-wrapper{
+        margin-top: -20px;
+      }
+
+      .datosPago{
+        margin-bottom:10px;
+        border-top: 1px solid #cacaca;
+        padding-top: 20px;
+      }
+
+      .datosPago span{
+        font-size:17px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #006838;
+        margin-left: 3px;
+      }
+
+      //// BOTONES
+
+      .botonRedondo{
+        font-weight: bold !important;
+        display: inline-flex;
+        cursor: pointer;
+        padding: 2px 15px;
+        border: solid 1.5px transparent;
+        color: #006338;
+      }
+
+      .botonRedondo.active{
+        border: solid 1.5px rgba(97,191,26,1);
+      }
+
+      .botonRedondo:hover{
+          border: solid 1.5px rgba(97,191,26,1);
+      }
+
+      ///// MODIFICANDO EL BOOTSTRAP
+
+      .col-12{
+        max-width: none !important;
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
 }

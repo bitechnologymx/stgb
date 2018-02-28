@@ -15,8 +15,8 @@
 
 <ion-content padding>
 
-  <div class="" id="menuGrid">
-
+<!--  <div class="" id="menuGrid">-->
+<div>
     <div class="row headerView pagos1">
         <div class="col-12 tac">
             <img class="logoStGeorgeMenu" src="./assets/imgs/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
@@ -27,30 +27,29 @@
                  <h2 class="nombreSeleccion">CONTÁCTENOS</h2>
              </div>
 
-             <div class="col-12 tac margen20c">
+             <div class="col-12 tac margen">
                  <div class="col-12 tawc margen20c">
-                     <span>Por favor, complete los datos solicitados y al finalizar, haga click en Enviar Ahora</span>
+                     <span>Por favor, complete los campos solicitados. Al finalizar, haga click en <b>"Enviar Ahora"</b></span>
                  </div>
-                 <div class="col-12 tal margen20c">
-                     <input type="text" class="inputContacto2" value="Nombre"/>
-                 </div>
-                 <div class="col-12 tal margen20c">
-                     <input type="text" class="inputContacto2" value="Email"/>
-                 </div>
-                 <div class="col-12 tal margen20c">
-                     <input type="text"  class="inputContacto2" value="Teléfono"/>
-                 </div>
-                 <div class="col-12 tal margen20c">
-                     <input type="text" value="Mensaje" class="inputContacto2"/>
-                 </div>
-                 <div class="col-12 tac margen25c">
-                     <input class="botones pbotonc" type="button" id="transferirBtn" onclick="" value="ENVIAR AHORA">
-                 </div>
-                 <div class="margen30c">
-                     <span class="conspan"></span>
-                     <br/>
-                 </div>
-             </div>
+            </div>
+                 <ion-item class="inputC">
+                   <ion-input value="" type="text" placeholder="Nombre"></ion-input>
+                 </ion-item>
+
+                 <ion-item class="inputC">
+                   <ion-input value="" type="email" placeholder="Correo Electrónico"></ion-input>
+                 </ion-item>
+
+                 <ion-item class="inputC">
+                   <ion-input value="" type="number" placeholder="Teléfono"></ion-input>
+                 </ion-item>
+
+                 <ion-item class="inputM">
+                   <ion-textarea  value="" placeholder="Mensaje"></ion-textarea>
+                 </ion-item>
+
+                   <button ion-button class="enviarAhora">ENVIAR AHORA</button>
+
 
          </div>
 

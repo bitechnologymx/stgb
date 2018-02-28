@@ -22,6 +22,17 @@ page-login {
       width: 80%;
     }
 
+    .loginBoton {
+      background-color: #006338;
+      font-weight: 600;
+      color: white;
+      margin-right: 20%;
+      margin-left: 20%;
+      margin-top:5%;
+      margin-bottom: 5%;
+      border-radius: 10px;
+    }
+
     .grid{
       padding: 0px !important;
     }
@@ -47,4 +58,92 @@ page-login {
     .marginLogin2{
       margin-bottom:20px;
     }
+
+//OTROS ESTILOS AÑADIDOS
+
+.item-md ion-icon[item-start]{
+  margin-left: 15px !important;
+}
+
+.item-md ion-icon[item-start] + .item-inner{
+  margin-left: 0px !important;
+}
+
+.input-cover{
+  border-bottom: solid 2px #006338;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 75%;
+  margin-left: 20%;
+  height: 100%;
+  margin-right: 5%;
+
+}
+
+.text-input-md{
+      color: #006338 !important;
+}
+
+.text-input-wp {
+    margin: 13px 8px;
+    padding: 0 8px;
+    width: calc(100% - 8px - 8px);
+    border: 2px solid transparent;
+    line-height: 3rem;
+  }
+
+  .item-wp.item-input.item-input-has-focus .text-input, item-wp.item-input.input-has-focus .text-input{
+    border-color: transparent !important;
+  }
+
+  .item-wp ion-icon[item-start]{
+    margin-left: 10px;
+    margin-top: 11px;
+    margin-bottom: 25px;
+  }
+
+    .text-input-wp{
+      margin: 13px -5px;
+      padding: 0 8px;
+      width: calc(100% - 8px - 8px);
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      border-bottom: 2px solid #006638;
+      line-height: 3rem;
+      color: #006338 !important;
+    }
+
+    .text-input-ios{
+      margin: 13px -5px;
+      padding: 0 8px;
+      width: calc(100% - 8px - 8px);
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      border-bottom: 2px solid #006638;
+      line-height: 3rem;
+      color: #006338 !important;
+    }
+
+    .item-ios ion-icon[item-start]{
+      margin-left: 0px;
+      margin-top: 9px;
+      margin-bottom: 15px;
+    }
+
+
+
+  .item-ios.item-block .item-inner {
+      padding-right: 8px;
+      padding-right: 8px;
+      border-bottom: none;
+    }
+
+    .item-md.item-block .item-inner {
+        padding-right: 8px;
+        padding-right: 8px;
+        border-bottom: none;
+      }
 }
