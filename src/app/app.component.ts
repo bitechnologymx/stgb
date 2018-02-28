@@ -10,7 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { PrincipalPage } from '../pages/principal/principal';
 import { PagosPage } from '../pages/pagos/pagos';
 import { PrestamosPage } from '../pages/prestamos/prestamos';
-import { RecuperarContraseñaPage } from '../pages/recuperar-contraseña/recuperar-contraseña';
+import { PasswordPage } from '../pages/password/password';
 import { SucursalesPage } from '../pages/sucursales/sucursales';
 import { TarjetasPage } from '../pages/tarjetas/tarjetas';
 import { TransferenciasPage } from '../pages/transferencias/transferencias';
@@ -33,7 +33,6 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Contacto', component: ContactoPage},
       { title: 'Cuentas', component: CuentasPage},
-      { title: 'List', component: ListPage },
       { title: 'Contacto', component: ContactoPage },
       { title: 'Cuentas', component: CuentasPage },
       { title: 'Login', component: LoginPage },
@@ -45,7 +44,6 @@ export class MyApp {
       { title: 'Tarjetas', component: TarjetasPage },
       { title: 'Transferencias', component: TransferenciasPage }
 
->>>>>>> master
     ];
 
   }
