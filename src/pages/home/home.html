@@ -26,9 +26,9 @@
 <div class="botonIngresar text-center transparencia" id="botonIngresar">
     <div class="col-12 tac" id="formUser" class="home1" style="display:none;">
         <img src="./assets/imgs/login/profilew.png" style="width:27px;"/>
-        <input type="text" id="usuario" name="usuario" style="margin-top:0;" value="Usuario">
+        <input type="text" id="usuario" name="usuario" [(ngModel)]="usuario" (ngModelChange)="onUsrChange($event);" style="margin-top:0;" value="Usuario">
         <span style="color: white;font-size: 20px;">X</span>
-        <button ion-button class="ingresarBoton">INGRESAR</button>
+        <button ion-button class="ingresarBoton" (click)="login()">INGRESAR</button>
     </div>
 
 

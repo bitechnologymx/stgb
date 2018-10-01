@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Prestamo = /** @class */ (function () {
+    function Prestamo() {
+    }
+    return Prestamo;
+}());
+exports.Prestamo = Prestamo;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJlc3RhbW8uaXRlcmZhY2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJwcmVzdGFtby5pdGVyZmFjZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBO0lBQUE7SUFRQSxDQUFDO0lBQUQsZUFBQztBQUFELENBQUMsQUFSRCxJQVFDO0FBUlksNEJBQVEiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY2xhc3MgUHJlc3RhbW8ge1xyXG4gICAgbnVtQ3JlZGl0byA6IHN0cmluZztcclxuICAgIHBzZXVkb25pbW8gOiBzdHJpbmc7XHJcbiAgICBkZXNjcmlwY2lvbiA6IHN0cmluZztcclxuICAgIHNhbGRvIDogc3RyaW5nOyAgICAgLy8gU2FsZG8gYWN0dWFsIGRlbCBwcsOpc3RhbW9cclxuICAgIG1vbnRvRGVzZW1ib2xzYWRvIDogc3RyaW5nO1xyXG4gICAgZmVjaGFQcm94UGFnbyA6IHN0cmluZztcclxuICAgIGN1b3RhIDogc3RyaW5nO1xyXG59XHJcbiJdfQ==

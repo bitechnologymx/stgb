@@ -48,7 +48,7 @@
             <ion-icon item-start>
               <img src="./assets/imgs/login/padlock.png" width="25" height="25" />
             </ion-icon>
-            <ion-input type="password" value="" placeholder="Contraseña" ></ion-input>
+            <ion-input type="password" value="" placeholder="Contraseña" [(ngModel)]="password" (ngModelChange)="onChange($event);" ></ion-input>
           </ion-item>
 
 <!--
@@ -59,7 +59,7 @@
             </div> -->
 
 
-                <button ion-button class="loginBoton">INGRESAR</button>
+                <button ion-button class="loginBoton" (click)="validaUsrLogin()">INGRESAR</button>
 
 
 

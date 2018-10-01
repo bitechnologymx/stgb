@@ -1,7 +1,13 @@
 import { Component, ViewChild } from '@angular/core';
+import { HttpClient,HttpParams,HttpHeaders } from '@angular/common/http';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { LogUtils } from "../shared/utils/log-utils";
+import { AppGlobals } from "../services/globals";
+import { Encriptador } from "../shared/utils/encripta";
+import { File } from '@ionic-native/file';
 
 import { HomePage } from '../pages/home/home';
 import { ContactoPage } from '../pages/contacto/contacto';
@@ -15,6 +21,8 @@ import { SucursalesPage } from '../pages/sucursales/sucursales';
 import { TarjetasPage } from '../pages/tarjetas/tarjetas';
 import { TransferenciasPage } from '../pages/transferencias/transferencias';
 
+const PUBKEYPATH: string = "assets/public.txt";
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -25,7 +33,10 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  private encriptador: Encriptador;
+
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
+              public file: File, private globVars: AppGlobals, public http: HttpClient) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -45,6 +56,23 @@ export class MyApp {
       { title: 'Transferencias', component: TransferenciasPage }
 
     ];
+
+    this.encriptador = new Encriptador();
+
+    this.leeLlavePublica();
+  }
+
+  private leeLlavePublica() {
+    console.log("leeLlavePublica BEGIN", new Date().toLocaleTimeString());
+
+    this.http.get(PUBKEYPATH, {responseType: 'text'}).subscribe( data =>
+      {
+        console.log(data);
+        let xx = this.encriptador.base64ToPublicKey(data);
+        this.globVars.wsPublicKey = xx;
+      });
+
+    console.log("leeLlavePublica END", new Date().toLocaleTimeString());
 
   }
 

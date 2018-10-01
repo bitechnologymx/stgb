@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Cuenta = /** @class */ (function () {
+    function Cuenta() {
+    }
+    return Cuenta;
+}());
+exports.Cuenta = Cuenta;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3VlbnRhcy5pdGVyZmFjZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImN1ZW50YXMuaXRlcmZhY2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQztJQUFBO0lBVUQsQ0FBQztJQUFELGFBQUM7QUFBRCxDQUFDLEFBVkEsSUFVQTtBQVZhLHdCQUFNIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTW92dG9DdWVudGEgfSBmcm9tIFwiLi9jdWVudGEtbW92dG9zLmludGVyZmFjZVwiO1xyXG5cclxuIGV4cG9ydCBjbGFzcyBDdWVudGEge1xyXG4gICAgbnVtQ3VlbnRhICAgOiBzdHJpbmc7XHJcbiAgICBudW1UYXJqZXRhICA6IHN0cmluZztcclxuICAgIHBzZXVkb25pbW8gIDogc3RyaW5nO1xyXG4gICAgbW9uZWRhICAgICAgOiBzdHJpbmc7XHJcbiAgICBzdGF0dXMgICAgICA6IHN0cmluZztcclxuICAgIHNhbGRvQWN0dWFsIDogc3RyaW5nO1xyXG4gICAgc2FsZG9Ub3RhbCAgOiBzdHJpbmc7XHJcbiAgICB0aXR1bGFyICAgICA6IHN0cmluZztcclxuICAgIG1vdmltaWVudG9zIDogTW92dG9DdWVudGFbXTtcclxufSJdfQ==
